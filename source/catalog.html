@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка Каталог</title>
+  </head>
+  <body>
+    <div class="wrapper wrapper--catalog">
+      <header class="header">
+        <a class="header__logo logo">
+          <img src="http://placehold.it/86x35">
+        </a>
+        <nav class="header__nav nav">
+          <button class="nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+            <span class="visually-hidden">Закрыть меню</span>
+          </button>
+          <ul class="nav__wrapper">
+            <li class="nav__item">
+              <a href="#" class="nav__link">Каталог товаров</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Вязание на заказ</a>
+            </li>
+            <li class="nav__item nav__item--search">
+              <form class="search" name="search" method="POST" action="https://echo.htmlacademy.ru">
+                <input type='text' name="search" class="search__input" id="search" required placeholder="Поиск по сайту">
+                <button type="submit" class="search__button">
+                  <span class="visually-hidden">Найти</span>
+                </button>
+              </form>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link nav__link--cart">Корзина: пока пуста</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <section class="main">
+          <div class="inner">
+            <h1 class="main__title">Каталог товаров</h1>
+          </div>
+        </section>
+        <section class="products">
+          <div class="inner">
+            <article class="product">
+              <a href="product__container">
+                <div class="product__image">
+                  <img src="http://placehold.it/260x315">
+                </div>
+                <h3 class="product__name">Зайчик-попрыгайчик</h3>
+              </a>
+              <span class="product__desc">Рост 30 см, вес 200 г</span>
+              <p class="product__info">
+                <span class="product__price">1 200 руб.</span>
+                <a href="#" class="product__add">
+                  <span class="visually-hidden">Добавить в корзину</span>
+                  <img src="http://placehold.it/20x19">
+                </a>
+              </p>
+            </article>
+            <article class="product">
+              <a href="product__container">
+                <div class="product__image">
+                  <img src="http://placehold.it/260x315">
+                </div>
+                <h3 class="product__name">Корзинка для белья</h3>
+              </a>
+              <span class="product__desc">Диаметр 15 см, высота 10 см</span>
+              <p class="product__info">
+                <span class="product__price">690 руб.</span>
+                <a href="#" class="product__add">
+                  <span class="visually-hidden">Добавить в корзину</span>
+                  <img src="http://placehold.it/20x19">
+                </a>
+              </p>
+            </article>
+            <article class="product">
+              <a href="product__container">
+                <div class="product__image">
+                  <img src="http://placehold.it/260x315">
+                </div>
+                <h3 class="product__name">Большая корзинка для игрушек</h3>
+              </a>
+              <span class="product__desc">Диаметр 30 см, высота 30 см</span>
+              <p class="product__info">
+                <span class="product__price">1 500 руб.</span>
+                <a href="#" class="product__add">
+                  <span class="visually-hidden">Добавить в корзину</span>
+                  <img src="http://placehold.it/20x19">
+                </a>
+              </p>
+            </article>
+          </div>
+        </section>
+        <div class="inner">
+          <section class="card">
+            <h2 class="card__title">Процесс производства</h2>
+            <div class="card__video">
+              <img src="http://placehold.it/260x150">
+              <img src="http://placehold.it/101x77">
+            </div>
+            <p class="card__info">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+            <a href="button card__button">Сделать заказ</a>
+          </section>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="inner">
+          <section class="footer__socials socials">
+            <h2 class="visually-hidden">Найдите нас на</h2>
+            <a href="#" class="social social--insta">
+              <span class="visually-hidden">Instagram</span>
+            </a>
+            <a href="#" class="social social--fb">
+              <span class="visually-hidden">Facebook</span>
+            </a>
+            <a href="#" class="social social--tw">
+              <span class="visually-hidden">Twitter</span>
+            </a>
+          </section>
+          <a href="#" class="footer__copyright copyright">
+            <span class="copyright__text">Разработано</span>
+            <img src="http://placehold.it/27x34">
+          </a>
+        </div>
+      </footer>
+      <section class="modal modal--cart">
+        <form class="cart">
+          <div class="inner">
+            <h2 class="cart__title">Добавить в корзину</h2>
+            <div class="cart__radios">
+              <label class="cart__radio radio">
+                <input type="radio" value="s" class="radio__input visually-hidden">
+                <span class="radio__name">S</span>
+              </label>
+              <label class="cart__radio radio">
+                <input type="radio" value="m" class="radio__input visually-hidden">
+                <span class="radio__name">M</span>
+              </label>
+              <label class="cart__radio radio">
+                <input type="radio" value="l" class="radio__input visually-hidden">
+                <span class="radio__name">L</span>
+              </label>
+            </div>
+            <button type="submit" class="button button--green cart__button">Добавить</button>
+          </div>
+        </form>
+      </section>
+    </div>
+  </body>
+</html>
