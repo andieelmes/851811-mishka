@@ -1,0 +1,28 @@
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 7px;
+  border-bottom: 1px solid #E5E5E5;
+  &__item {
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 28px;
+    height: 28px;
+    background-position: center;
+    margin: 0 15px;
+    &--insta {
+      background-image: url(../img/icon-insta.svg);
+      background-size: 22px 21px;
+    }
+    &--fb {
+      background-image: url(../img/icon-fb.svg);
+      background-size: 15px 28px;
+    }
+    &--tw {
+      background-image: url(../img/icon-twitter.svg);
+      background-size: 23px 20px;
+    }
+  }
+}

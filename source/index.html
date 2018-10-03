@@ -42,11 +42,11 @@
       <div class="cover__links">
         <a href="#" class="cover__link link link--light flex-container">
           <span class="link__text">Предметы интерьера</span>
-          <img src="img/icon-interior.svg" alt="Лампа">
+          <img class="link__icon" src="img/icon-interior.svg" alt="Лампа">
         </a>
-        <a href="#" class="cover__link link">
+        <a href="#" class="cover__link link flex-container">
           <span class="link__text">Детские игрушки</span>
-          <img src="img/icon-toy.svg" alt="Лего">
+          <img class="link__icon" src="img/icon-toy.svg" alt="Лего">
         </a>
       </div>
     </section>
@@ -60,21 +60,21 @@
           <table class="featured__descriptions">
             <tbody>
               <tr class="featured__description">
-                <td>Цвет:</td>
-                <td>«Тиффани»/серый</td>
+                <td class="featured__quality">Цвет:</td>
+                <td class="featured__value">«Тиффани»/серый</td>
               </tr>
               <tr class="featured__description">
-                <td>Диаметр:</td>
-                <td>25 см</td>
+                <td class="featured__quality">Диаметр:</td>
+                <td class="featured__value">25 см</td>
               </tr>
               <tr class="featured__description">
-                <td>Высота:</td>
-                <td>15 см</td>
+                <td class="featured__quality">Высота:</td>
+                <td class="featured__value">15 см</td>
               </tr>
             </tbody>
           </table>
           <div class="featured__image">
-            <img src="http://placehold.it/260x315" alt="Вязаные корзинки">
+            <img src="img/triple-set-mobile@1x.jpg" alt="Вязаные корзинки">
           </div>
           <span class="featured__price">Цена: 990 руб.</span>
           <a class="button featured__button" href="#">ЗАКАЗАТЬ</a>
@@ -87,39 +87,39 @@
         <ul class="about__items">
           <li class="about__item">
             <div class="about__icon">
-              <img src="http://placehold.it/32x37" alt="Цветок">
+              <img src="img/icon-feature-flower.svg" alt="Цветок">
             </div>
-            <p class="about__text">Экологически чистые материалы</p>
+            <p class="about__text">Экологически чистые материалы</p>
           </li>
           <li class="about__item">
             <div class="about__icon">
-              <img src="http://placehold.it/32x37" alt="Скандинавский стиль">
+              <img src="img/icon-feature-money.svg" alt="Скандинавский стиль">
             </div>
-            <p class="about__text">Скандинавский стиль по российской цене</p>
+            <p class="about__text">Скандинавский стиль по российской цене</p>
           </li>
           <li class="about__item">
             <div class="about__icon">
-              <img src="http://placehold.it/32x37" alt="Лайк">
+              <img src="img/icon-feature-heart.svg" alt="Лайк">
             </div>
-            <p class="about__text">Увеличивает лайки на фотографиях</p>
+            <p class="about__text">Увеличивает лайки на фотографиях</p>
           </li>
           <li class="about__item">
             <div class="about__icon">
-              <img src="http://placehold.it/32x37" alt="Пряжа">
+              <img src="img/icon-feature-ball.svg" alt="Пряжа">
             </div>
-            <p class="about__text">Связано вручную с любовью и умилением</p>
+            <p class="about__text">Связано вручную с любовью и умилением</p>
           </li>
           <li class="about__item">
             <div class="about__icon">
-              <img src="http://placehold.it/32x37" alt="Ракета">
+              <img src="img/icon-feature-rocket.svg" alt="Ракета">
             </div>
             <p class="about__text">Поддержка отечественного производителя</p>
           </li>
           <li class="about__item">
             <div class="about__icon">
-              <img src="http://placehold.it/32x37" alt="Подарочная упаковка">
+              <img src="img/icon-feature-gift.svg" alt="Подарочная упаковка">
             </div>
-            <p class="about__text">Поставляется в подарочной упаковке</p>
+            <p class="about__text">Поставляется в подарочной упаковке</p>
           </li>
         </ul>
       </div>
@@ -132,7 +132,7 @@
             <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
             <cite class="reviews__author">
               <span>Анастасия Красильникова</span>
-              <a href="#">@misssssiskras</a>
+              <a href="#" class="reviews__link">@misssssiskras</a>
             </cite>
           </blockquote>
         </div>
@@ -149,20 +149,22 @@
         <table class="contact__items">
           <tbody>
             <tr class="contact__item">
-              <td>e-mail:</td>
-              <td>
-                <a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+              <td class="contact__name">e-mail:</td>
+              <td class="contact__address">
+                <a class="contact__link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
               </td>
             </tr>
             <tr class="contact__item">
-              <td>адрес:</td>
-              <td>г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
+              <td class="contact__name">адрес:</td>
+              <td class="contact__address">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
             </tr>
           </tbody>
         </table>
-        <div class="contact__map">
-          <img src="http://placehold.it/320x457" alt="Наш адрес: г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
-        </div>
+      </div>
+      <div class="contact__map">
+        <img src="img/map-mobile@1x.jpg" alt="Наш адрес: г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
+      </div>
+      <div class="container">
         <a href="#" class="button contact__button">Напишите нам</a>
       </div>
     </section>
@@ -171,13 +173,13 @@
     <div class="container">
       <section class="footer__socials socials">
         <h2 class="visually-hidden">Найдите нас на</h2>
-        <a href="#" class="social social--insta" aria-label="Instagram"></a>
-        <a href="#" class="social social--fb" aria-label="Facebook"></a>
-        <a href="#" class="social social--tw" aria-label="Twitter"></a>
+        <a href="#" class="socials__item socials__item--insta" aria-label="Instagram"></a>
+        <a href="#" class="socials__item socials__item--fb" aria-label="Facebook"></a>
+        <a href="#" class="socials__item socials__item--tw" aria-label="Twitter"></a>
       </section>
       <a href="https://htmlacademy.ru/intensive/adaptive" class="footer__copyright copyright">
         <span class="copyright__text">Разработано</span>
-        <img src="http://placehold.it/27x34" alt="Лого HTML Академии">
+        <img src="img/htmlacademy.svg" alt="Лого HTML Академии" width="27" height="34">
       </a>
     </div>
   </footer>

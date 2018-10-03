@@ -21,6 +21,10 @@ a {
   color: black;
 }
 
+img {
+  max-width: 100%;
+}
+
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -57,6 +61,6 @@ a:active {
   line-height: 1.13;
   text-align: center;
   color: #010000;
-  padding: 0 29px;
+  padding: 0 30px;
   margin: 0;
 }
