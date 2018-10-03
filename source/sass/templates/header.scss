@@ -1,0 +1,16 @@
+.header {
+  background-color: white;
+  padding: 0 29px;
+  padding: 22px 29px 13px;
+  flex-wrap: nowrap;
+  position: relative;
+  justify-content: center;
+  &__nav {
+    position: absolute;
+    right: 16px;
+    top: 14px;
+  }
+  &__logo {
+    margin-right: 2px;
+  }
+}
