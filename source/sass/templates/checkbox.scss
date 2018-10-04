@@ -1,0 +1,30 @@
+.checkbox {
+  display: block;
+  &__name {
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 1.06;
+    color: #000000;
+    position: relative;
+    padding-left: 64px;
+    display: inline-block;
+    vertical-align: top;
+    &:before {
+      position: absolute;
+      background-color: white;
+      border: solid 2px #444444;
+      width: 40px;
+      height: 40px;
+      content: "";
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 22px 16px;
+    }
+  }
+  &__input:checked ~ .checkbox__name:before {
+   background-image: url(../img/icon-tick.svg);
+  }
+}

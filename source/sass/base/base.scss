@@ -23,6 +23,7 @@ a {
 
 img {
   max-width: 100%;
+  display: block;
 }
 
 .visually-hidden {
@@ -63,4 +64,8 @@ a:active {
   color: #010000;
   padding: 0 30px;
   margin: 0;
+  &--bg {
+    background-color: #F1F1F1;
+    padding: 71px 30px 76px;
+  }
 }

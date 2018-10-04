@@ -1,0 +1,42 @@
+.form {
+  &__text {
+    font-size: 13px;
+    line-height: 1.85;
+    color: #444444;
+    margin: 22px 0 25px;
+  }
+  &__block {
+    margin: 20px 0;
+    padding: 0;
+    width: 100%;
+    display: block;
+    border: 0;
+  }
+  &__caption {
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 0.94;
+    color: #63d1bb;
+    width: 100%;
+    display: flex;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    &:after {
+      flex-grow: 1;
+      height: 1px;
+      background-color: #63d1bb;
+      width: 100%;
+      content: "";
+      margin: 7px 0 0 25px;
+    }
+  }
+  &__label {
+    padding: 14px 0 11px;
+    &--checkbox {
+      padding: 17px 0 14px;
+      &:last-child {
+        padding-bottom: 11px;
+      }
+    }
+  }
+}
