@@ -8,7 +8,7 @@
 </head>
 
 <body>
-  <img src="preview/mishka-index-mobile.jpg" style="position:absolute; left:50%;top: 0;margin-left:-160px;opacity:0.5;z-index:999">
+  <!--<img src="preview/mishka-index-mobile-menu.jpg" style="position:absolute; left:50%;top: 0;margin-left:-160px;opacity:0.5;z-index:999"> -->
   <header class="header flex-container">
     <a class="header__logo logo">
       <img src="img/logo-mobile.svg" alt="Лого интернет-магазина Мишка">
@@ -24,8 +24,10 @@
         </li>
         <li class="nav__item nav__item--search">
           <form class="search" name="search" method="POST" action="https://echo.htmlacademy.ru">
-            <input type="text" name="search" class="search__input" id="search" required placeholder="Поиск по сайту">
-            <button type="submit" class="search__button" aria-label="Найти"></button>
+            <label class="search__label">
+              <input type="text" name="search" class="search__input" id="search" required placeholder="Поиск по сайту">
+            </label>
+            <button type="submit" class="search__button visually-hidden" aria-label="Найти"></button>
           </form>
         </li>
         <li class="nav__item">
@@ -179,15 +181,16 @@
       </section>
       <a href="https://htmlacademy.ru/intensive/adaptive" class="footer__copyright copyright">
         <span class="copyright__text">Разработано</span>
-        <img src="img/htmlacademy.svg" alt="Лого HTML Академии" width="27" height="34">
+        <img class="copyright__logo" src="img/htmlacademy.svg" alt="Лого HTML Академии" width="40" height="45">
       </a>
     </div>
   </footer>
   <section class="modal modal--cart">
-    <form class="cart" name="cart" method="POST" action="https://echo.htmlacademy.ru">
+    <form class="modal__cart cart" name="cart" method="POST" action="https://echo.htmlacademy.ru">
       <div class="container">
-        <h2 class="cart__title">Добавить в корзину</h2>
-        <div class="cart__sizes">
+        <h2 class="cart__title">Добавить в корзину</h2>
+        <p class="cart__caption">Выберите размер:</p>
+        <div class="cart__sizes flex-container">
           <label class="cart__size size">
             <input type="radio" value="s" class="size__input visually-hidden" name="size">
             <span class="size__name">S</span>

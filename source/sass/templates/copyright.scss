@@ -1,8 +1,18 @@
 .copyright {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 0 18px;
   &__text {
     font-size: 19px;
     font-weight: 700;
     line-height: 0.95;
     color: #000000;
+    padding-right: 22px;
+    padding-left: 4px;
+  }
+  &__logo {
+    margin-top: 2px;
   }
 }

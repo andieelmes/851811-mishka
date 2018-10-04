@@ -12,4 +12,9 @@
   min-height: 52px;
   background-color: white;
   text-transform: uppercase;
+  &--green {
+    border-color: #63d1bb;
+    background-color: #63d1bb;
+    color: white;
+  }
 }
