@@ -1,4 +1,5 @@
 .form {
+  padding-bottom: 30px;
   &__text {
     font-size: 13px;
     line-height: 1.85;
@@ -11,6 +12,9 @@
     width: 100%;
     display: block;
     border: 0;
+    &:last-of-type {
+      margin-bottom: 7px;
+    }
   }
   &__caption {
     font-size: 17px;
@@ -19,7 +23,6 @@
     color: #63d1bb;
     width: 100%;
     display: flex;
-    padding-bottom: 20px;
     text-transform: uppercase;
     &:after {
       flex-grow: 1;
@@ -30,13 +33,50 @@
       margin: 7px 0 0 25px;
     }
   }
+  &__prefix {
+    flex-shrink: 0;
+  }
   &__label {
     padding: 14px 0 11px;
+    display: block;
+    &:first-of-type {
+      padding-top: 34px;
+    }
     &--checkbox {
       padding: 17px 0 14px;
       &:last-child {
         padding-bottom: 11px;
       }
+      &:first-of-type {
+        padding-top: 37px;
+      }
     }
+    &--input {
+      padding: 9px 0 13px;
+      &:first-of-type {
+        padding-top: 29px;
+      }
+    }
+    &--tel {
+      padding: 0px 0 13px;
+      &:first-of-type {
+        padding-top: 6px;
+      }
+    }
+    &--email {
+      padding: 0px 0 13px;
+      &:first-of-type {
+        padding-top: 7px;
+      }
+    }
+  }
+  &__notice {
+    font-size: 14px;
+    line-height: 1.14;
+    color: #444444;
+  }
+  &__button {
+    width: 100%;
+    margin: 25px 0;
   }
 }

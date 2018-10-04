@@ -1,0 +1,57 @@
+.input {
+  &__name {
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 1.06;
+    color: #000000;
+    display: block;
+  }
+  &__field {
+    display: block;
+    width: 100%;
+    border: 0;
+    outline: none;
+    box-shadow: inset 0px -2px 0 0 #000000;
+    font-size: 17px;
+    line-height: 1.2;
+    color: black;
+    height: 52px;
+    padding: 5px 0 9px;
+    &::placeholder {
+      color: rgba(68, 68, 68, 0.3);
+      line-height: 1.2;
+    }
+  }
+  &--tel {
+    position: relative;
+    &:after {
+      position: absolute;
+      right: 9px;
+      top: 41%;
+      transform: translateY(-50%);
+      background-repeat: no-repeat;
+      background-size: cover;
+      content: "";
+      background-image: url(../img/icon-phone.svg);
+      width: 25px;
+      height: 24px;
+      opacity: 0.2;
+    }
+  }
+  &--email {
+    position: relative;
+    &:after {
+      position: absolute;
+      right: 5px;
+      top: 47%;
+      transform: translateY(-50%);
+      background-repeat: no-repeat;
+      background-size: cover;
+      content: "";
+      background-image: url(../img/icon-mail.svg);
+      width: 32px;
+      height: 32px;
+      opacity: 0.2;
+    }
+  }
+}
