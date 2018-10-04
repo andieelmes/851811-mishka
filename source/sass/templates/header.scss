@@ -2,18 +2,18 @@
   background-color: white;
   position: relative;
   justify-content: center;
-  &__nav {
-    position: absolute;
-    right: 16px;
-    top: 14px;
-    &.active {
-      position: relative;
-      right: auto;
-      top: auto;
-    }
+}
+.header__nav {
+  position: absolute;
+  right: 16px;
+  top: 14px;
+  &.active {
+    position: relative;
+    right: auto;
+    top: auto;
   }
-  &__logo {
-    margin-right: 2px;
-    padding: 22px 30px 22px;
-  }
+}
+.header__logo {
+  margin-right: 2px;
+  padding: 22px 30px 22px;
 }

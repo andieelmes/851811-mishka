@@ -5,28 +5,28 @@
   max-width: 320px;
   width: 100%;
   padding: 20px 0 46px;
-  &__title {
-    font-size: 25px;
-    font-weight: 700;
-    line-height: 1.2;
-    text-align: center;
-    color: #000000;
-    margin: 0;
-    padding: 9px 0 5px;
-    text-transform: uppercase;
-  }
-  &__caption {
-    font-size: 15px;
-    line-height: 1.5;
-    text-align: center;
-    color: #444444;
-    margin: 10px 0;
-  }
-  &__sizes {
-    margin: 27px 0 30px;
-    flex-wrap: nowrap;
-  }
-  &__button {
-    width: 100%;
-  }
+}
+.cart__title {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  color: #000000;
+  margin: 0;
+  padding: 9px 0 5px;
+  text-transform: uppercase;
+}
+.cart__caption {
+  font-size: 15px;
+  line-height: 1.5;
+  text-align: center;
+  color: #444444;
+  margin: 10px 0;
+}
+.cart__sizes {
+  margin: 27px 0 30px;
+  flex-wrap: nowrap;
+}
+.cart__button {
+  width: 100%;
 }

@@ -1,27 +1,4 @@
 .input {
-  &__name {
-    font-size: 17px;
-    font-weight: 700;
-    line-height: 1.06;
-    color: #000000;
-    display: block;
-  }
-  &__field {
-    display: block;
-    width: 100%;
-    border: 0;
-    outline: none;
-    box-shadow: inset 0px -2px 0 0 #000000;
-    font-size: 17px;
-    line-height: 1.2;
-    color: black;
-    height: 52px;
-    padding: 5px 0 9px;
-    &::placeholder {
-      color: rgba(68, 68, 68, 0.3);
-      line-height: 1.2;
-    }
-  }
   &--tel {
     position: relative;
     &:after {
@@ -53,5 +30,28 @@
       height: 32px;
       opacity: 0.2;
     }
+  }
+}
+.input__name {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.06;
+  color: #000000;
+  display: block;
+}
+.input__field {
+  display: block;
+  width: 100%;
+  border: 0;
+  outline: none;
+  box-shadow: inset 0px -2px 0 0 #000000;
+  font-size: 17px;
+  line-height: 1.2;
+  color: black;
+  height: 52px;
+  padding: 5px 0 9px;
+  &::placeholder {
+    color: rgba(68, 68, 68, 0.3);
+    line-height: 1.2;
   }
 }

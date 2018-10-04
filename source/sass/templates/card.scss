@@ -3,46 +3,47 @@
   margin-bottom: 30px;
   border: solid 1px #ececec;
   margin-bottom: 58px;
-  &__title {
-    font-size: 17px;
-    font-weight: 700;
-    line-height: 1.41;
-    color: #000000;
-    position: relative;
-    margin: 0;
-    padding: 23px 20px 26px 90px;
-    &:before {
-      position: absolute;
-      left: 34px;
-      top: 47%;
-      transform: translateY(-50%);
-      background-image: url(../img/icon-video.svg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      width: 32px;
-      height: 32px;
-      content: "";
-    }
-  }
-  &__video {
-    display: block;
-    position: relative;
-  }
-  &__play {
+}
+.card__title {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.41;
+  color: #000000;
+  position: relative;
+  margin: 0;
+  padding: 23px 20px 26px 90px;
+  &:before {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-  }
-  &__info {
-    margin: 27px 0 25px;
-    padding: 0 34px;
-    font-size: 13px;
-    line-height: 1.85;
-    color: #444444;
-  }
-  &__button {
-    margin: 0 34px;
-    margin-bottom: 32px;
+    left: 34px;
+    top: 47%;
+    transform: translateY(-50%);
+    background-image: url(../img/icon-video.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 32px;
+    height: 32px;
+    content: "";
   }
 }
+.card__video {
+  display: block;
+  position: relative;
+}
+.card__play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.card__info {
+  margin: 27px 0 25px;
+  padding: 0 34px;
+  font-size: 13px;
+  line-height: 1.85;
+  color: #444444;
+}
+.card__button {
+  margin: 0 34px;
+  margin-bottom: 32px;
+}
+

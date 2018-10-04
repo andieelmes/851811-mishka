@@ -8,9 +8,9 @@
   &.active {
     display: block;
   }
-  &__cart {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-  }
+}
+.modal__cart {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }

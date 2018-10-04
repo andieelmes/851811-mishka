@@ -1,13 +1,8 @@
-.cover {
-  &__links {
-
-  }
-  &__top {
-    padding: 71px 0 122px;
-    background-color: #F9F9F9;
-    background-image: url(../img/hero-mobile@1x.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
+.cover__top {
+  padding: 71px 0 122px;
+  background-color: #F9F9F9;
+  background-image: url(../img/hero-mobile@1x.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }

@@ -13,61 +13,62 @@
     background-size: auto 6px;
     content: "";
   }
-  &__title {
-    font-size: 25px;
-    font-weight: 700;
-    line-height: 1.2;
-    color: #000000;
-    margin: 0;
-  }
-  &__prefix {
-    font-size: 17px;
-    font-weight: 700;
-    line-height: 1.18;
-    color: #63d1bb;
-  }
-  &__text {
-    font-size: 15px;
-    line-height: 1.6;
-    color: #444444;
-    margin: 18px 0 17px;
-  }
-  &__descriptions {
-    width: 100%;
-    font-size: 15px;
-    line-height: 1.33;
-    color: #444444;
-    border-collapse: collapse;
-    margin: 15px 0;
-  }
-  &__description {
-    border-bottom: 1px solid #ECECEC;
-    padding: 11px 0 7px;
-    display: flex;
-    margin: 0;
-  }
-  &__quality {
-    flex-basis: 37.5%;
-    padding-right: 10px;
-    display: block;
-    flex-shrink: 0;
-  }
-  &__value {
-    flex-grow: 1;
-    display: block;
-  }
-  &__image {
-    margin: 28px 0 25px;
-  }
-  &__price {
-    font-size: 17px;
-    font-weight: 700;
-    line-height: 1.41;
-    text-align: center;
-    color: #444444;
-    display: block;
-  }
-  &__button {
-    margin: 27px 0;
-  }
 }
+.featured__title {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #000000;
+  margin: 0;
+}
+.featured__prefix {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.18;
+  color: #63d1bb;
+}
+.featured__text {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #444444;
+  margin: 18px 0 17px;
+}
+.featured__descriptions {
+  width: 100%;
+  font-size: 15px;
+  line-height: 1.33;
+  color: #444444;
+  border-collapse: collapse;
+  margin: 15px 0;
+}
+.featured__description {
+  border-bottom: 1px solid #ECECEC;
+  padding: 11px 0 7px;
+  display: flex;
+  margin: 0;
+}
+.featured__quality {
+  flex-basis: 37.5%;
+  padding-right: 10px;
+  display: block;
+  flex-shrink: 0;
+}
+.featured__value {
+  flex-grow: 1;
+  display: block;
+}
+.featured__image {
+  margin: 28px 0 25px;
+}
+.featured__price {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.41;
+  text-align: center;
+  color: #444444;
+  display: block;
+}
+.featured__button {
+  margin: 27px 0;
+}
+

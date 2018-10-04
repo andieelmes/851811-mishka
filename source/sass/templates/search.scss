@@ -7,6 +7,9 @@
     line-height: 1.41;
     color: #000000;
     border: 0;
+    &::placeholder {
+      color: #000000;
+    }
   }
   &__label {
     width: 100%;
