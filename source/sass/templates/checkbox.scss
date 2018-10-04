@@ -1,6 +1,7 @@
 .checkbox {
   display: block;
 }
+
 .checkbox__name {
   font-size: 17px;
   font-weight: 700;
@@ -10,7 +11,8 @@
   padding-left: 64px;
   display: inline-block;
   vertical-align: top;
-  &:before {
+
+  &::before {
     position: absolute;
     background-color: white;
     border: solid 2px #444444;
@@ -25,6 +27,7 @@
     background-size: 22px 16px;
   }
 }
-.checkbox__input:checked ~ .checkbox__name:before {
-  background-image: url(../img/icon-tick.svg);
+
+.checkbox__input:checked ~ .checkbox__name::before {
+  background-image: url("../img/icon-tick.svg");
 }

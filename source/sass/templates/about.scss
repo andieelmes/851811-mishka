@@ -1,6 +1,7 @@
 .about {
   padding: 27px 0 2px;
 }
+
 .about__title {
   font-size: 25px;
   font-weight: 700;
@@ -8,14 +9,17 @@
   color: #000000;
   margin: 0;
 }
+
 .about__items {
   list-style: none;
   margin: 0;
   padding: 24px 0 10px;
 }
+
 .about__item {
   padding-bottom: 12.5px;
 }
+
 .about__icon {
   min-width: 40px;
   min-height: 50px;
@@ -24,6 +28,7 @@
   justify-content: center;
   align-items: center;
 }
+
 .about__text {
   font-size: 17px;
   font-weight: 700;

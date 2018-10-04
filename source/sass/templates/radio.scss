@@ -1,6 +1,7 @@
 .radio {
   display: block;
 }
+
 .radio__name {
   font-size: 17px;
   font-weight: 700;
@@ -10,7 +11,8 @@
   padding-left: 64px;
   display: inline-block;
   vertical-align: top;
-  &:before {
+
+  &::before {
     position: absolute;
     background-color: white;
     border: solid 2px #444444;
@@ -23,7 +25,8 @@
     transform: translateY(-50%);
   }
 }
-.radio__input:checked ~ .radio__name:before {
+
+.radio__input:checked ~ .radio__name::before {
   background-color: #62d1ba;
   box-shadow: inset 0 0 0 12px white;
 }

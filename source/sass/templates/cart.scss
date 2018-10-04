@@ -1,11 +1,12 @@
 .cart {
   background-color: white;
-  box-shadow: 0px 5px 10px 0 rgba(0, 1, 1, 0.25);
+  box-shadow: 0 5px 10px 0 rgba(0, 1, 1, 0.25);
   border: solid 1px #c6c6c6;
   max-width: 320px;
   width: 100%;
   padding: 20px 0 46px;
 }
+
 .cart__title {
   font-size: 25px;
   font-weight: 700;
@@ -16,6 +17,7 @@
   padding: 9px 0 5px;
   text-transform: uppercase;
 }
+
 .cart__caption {
   font-size: 15px;
   line-height: 1.5;
@@ -23,10 +25,12 @@
   color: #444444;
   margin: 10px 0;
 }
+
 .cart__sizes {
   margin: 27px 0 30px;
   flex-wrap: nowrap;
 }
+
 .cart__button {
   width: 100%;
 }

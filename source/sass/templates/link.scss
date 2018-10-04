@@ -4,28 +4,33 @@
   font-size: 19px;
   font-weight: 700;
   line-height: 1.26;
-  display: block;
   padding: 0 29px;
   min-height: 103px;
   display: flex;
   flex-wrap: nowrap;
+
   &:hover {
     background-color: #46c1ae;
   }
+
   &:active {
     background-color: #46c1ae;
     opacity: 0.3;
   }
+
   &--light {
     background-color: #63d1bb;
+
     &:hover {
       background-color: #59d5bc;
     }
+
     &:active {
       background-color: #59d5bc;
     }
   }
 }
+
 .link__text {
   padding: 27px 0 30px;
   max-width: 66%;

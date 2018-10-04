@@ -5,10 +5,12 @@
   height: 100vh;
   background-color: rgba(white, 0.9);
   display: none;
+
   &.active {
     display: block;
   }
 }
+
 .modal__cart {
   position: absolute;
   top: 50%;

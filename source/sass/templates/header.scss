@@ -3,16 +3,19 @@
   position: relative;
   justify-content: center;
 }
+
 .header__nav {
   position: absolute;
   right: 16px;
   top: 14px;
+
   &.active {
     position: relative;
     right: auto;
     top: auto;
   }
 }
+
 .header__logo {
   margin-right: 2px;
   padding: 22px 30px 22px;

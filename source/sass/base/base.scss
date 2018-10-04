@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  font-family: 'Open Sans', Arial, sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 15px;
   line-height: 30px;
   color: black;
@@ -44,7 +44,6 @@ a:active {
 
 .container {
   min-width: 320px;
-  margin: 0 auto;
   padding: 0 29px;
   max-width: 320px;
   margin: 0 auto;
@@ -64,8 +63,9 @@ a:active {
   color: #010000;
   padding: 0 30px;
   margin: 0;
+
   &--bg {
-    background-color: #F1F1F1;
+    background-color: #f1f1f1;
     padding: 71px 30px 76px;
   }
 }
