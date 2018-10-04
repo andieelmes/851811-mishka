@@ -6,13 +6,6 @@ var plumber = require("gulp-plumber");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
-var injectSvg = require('gulp-inject-svg');
-
-gulp.task('injectSvg', function() {
-  return gulp.src('source/*.html')
-    .pipe(injectSvg({ base: 'source/' }))
-    .pipe(gulp.dest('source'));
-});
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -36,7 +29,6 @@ gulp.task("server", function () {
 
   gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css"));
   gulp.watch("source/*.html").on("change", server.reload);
-  //gulp.watch("source/*.html", gulp.series("injectSvg"));
 });
 
 gulp.task("start", gulp.series("css", "server"));

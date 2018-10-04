@@ -8,7 +8,6 @@
     "autoprefixer": "9.1.x",
     "browser-sync": "2.24.x",
     "gulp": "4.0.x",
-    "gulp-inject-svg": "^0.1.18",
     "gulp-plumber": "1.2.x",
     "gulp-postcss": "8.0.x",
     "gulp-sass": "4.0.x",
