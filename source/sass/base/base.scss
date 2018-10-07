@@ -42,30 +42,9 @@ a:active {
   opacity: 0.3;
 }
 
-.container {
-  min-width: 320px;
-  padding: 0 29px;
-  max-width: 320px;
-  margin: 0 auto;
-}
-
 .flex-container {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
-.page-title {
-  font-size: 27px;
-  font-weight: 700;
-  line-height: 1.13;
-  text-align: center;
-  color: #010000;
-  padding: 0 30px;
-  margin: 0;
-
-  &--bg {
-    background-color: #f1f1f1;
-    padding: 71px 30px 76px;
-  }
-}
