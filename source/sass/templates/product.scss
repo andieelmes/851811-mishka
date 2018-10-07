@@ -47,6 +47,8 @@
 .product__info {
   margin: 0;
   padding: 21px 0;
+  display: flex;
+  justify-content: space-between;
   flex-wrap: nowrap;
 }
 

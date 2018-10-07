@@ -27,6 +27,8 @@
 }
 
 .cart__sizes {
+  display: flex;
+  justify-content: space-between;
   margin: 27px 0 30px;
   flex-wrap: nowrap;
 }

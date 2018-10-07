@@ -8,6 +8,7 @@
   min-height: 103px;
   display: flex;
   flex-wrap: nowrap;
+  justify-content: space-between;
 
   &:hover {
     background-color: $greeny_blue_four;
