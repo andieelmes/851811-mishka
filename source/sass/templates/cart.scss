@@ -1,0 +1,38 @@
+.cart {
+  background-color: white;
+  box-shadow: 0 5px 10px 0 rgba(0, 1, 1, 0.25);
+  border: solid 1px $grey_one;
+  max-width: 320px;
+  width: 100%;
+  padding: 20px 0 46px;
+}
+
+.cart__title {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  color: $black;
+  margin: 0;
+  padding: 9px 0 5px;
+  text-transform: uppercase;
+}
+
+.cart__caption {
+  font-size: 15px;
+  line-height: 1.5;
+  text-align: center;
+  color: $greyish_brown;
+  margin: 10px 0;
+}
+
+.cart__sizes {
+  display: flex;
+  justify-content: space-between;
+  margin: 27px 0 30px;
+  flex-wrap: nowrap;
+}
+
+.cart__button {
+  width: 100%;
+}

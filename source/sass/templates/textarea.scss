@@ -1,0 +1,16 @@
+.textarea {
+  resize: none;
+  background-color: $white;
+  border: solid 2px $greyish_brown;
+  font-size: 17px;
+  line-height: 1.06;
+  color: black;
+  width: 100%;
+  display: block;
+  padding: 14px 15px;
+  min-height: 142px;
+
+  &::placeholder {
+    color: rgba(68, 68, 68, 0.3);
+  }
+}

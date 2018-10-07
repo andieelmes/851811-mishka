@@ -1,0 +1,37 @@
+.search {
+  display: block;
+  width: 100%;
+}
+
+.search__input {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.41;
+  color: $black;
+  border: 0;
+
+  &::placeholder {
+    color: $black;
+  }
+}
+
+.search__label {
+  width: 100%;
+  display: block;
+  padding: 24px 30px 25px 74px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    left: 33px;
+    top: 52%;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 18px;
+    opacity: 0.2;
+    background-image: url("../img/icon-search.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: "";
+  }
+}

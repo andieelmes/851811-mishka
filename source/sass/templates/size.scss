@@ -1,0 +1,17 @@
+.size {
+  max-width: 82px;
+  width: 100%;
+  padding: 9px 10px;
+  min-height: 52px;
+  display: inline-block;
+  vertical-align: top;
+  border: solid 2px rgba($greyish_brown, 0.1);
+  text-align: center;
+}
+
+.size__name {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 0.94;
+  color: $greyish_brown;
+}

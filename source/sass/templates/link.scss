@@ -1,0 +1,38 @@
+.link {
+  background-color: $greeny_blue;
+  color: white;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 1.26;
+  padding: 0 29px;
+  min-height: 103px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+
+  &:hover {
+    background-color: $greeny_blue_four;
+  }
+
+  &:active {
+    background-color: $greeny_blue_four;
+    opacity: 0.3;
+  }
+
+  &--light {
+    background-color: $seafoam_blue;
+
+    &:hover {
+      background-color: $greeny_blue_five;
+    }
+
+    &:active {
+      background-color: $greeny_blue_five;
+    }
+  }
+}
+
+.link__text {
+  padding: 27px 0 30px;
+  max-width: 66%;
+}

@@ -1,0 +1,14 @@
+.page-title {
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 1.13;
+  text-align: center;
+  color: $very_dark_brown;
+  padding: 0 30px;
+  margin: 0;
+
+  &--bg {
+    background-color: $white_two;
+    padding: 71px 30px 76px;
+  }
+}

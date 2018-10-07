@@ -1,0 +1,20 @@
+.modal {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(white, 0.9);
+  display: none;
+
+  &.active {
+    display: block;
+  }
+}
+
+.modal__cart {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+}

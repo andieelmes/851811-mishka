@@ -1,0 +1,51 @@
+.contact {
+  padding: 36px 0 19px;
+}
+
+.contact__title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.67;
+  color: $black;
+  margin: 0;
+}
+
+.contact__items {
+  width: 100%;
+  font-size: 15px;
+  line-height: 2;
+  color: $greyish_brown;
+  border-collapse: collapse;
+  margin: 14px 0 19px;
+}
+
+.contact__item {
+  padding: 11px 0 17px;
+  display: flex;
+  margin: 0;
+}
+
+.contact__name {
+  flex-basis: 29.5%;
+  display: block;
+  padding-right: 10px;
+  flex-shrink: 0;
+}
+
+.contact__address {
+  flex-grow: 1;
+  display: block;
+}
+
+.contact__link {
+  border-bottom: 1px solid $greeny_blue_three;
+}
+
+.contact__button {
+  margin: 41px 0 20px;
+}
+
+.contact__map {
+  display: flex;
+  justify-content: center;
+}
