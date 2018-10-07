@@ -2,20 +2,20 @@
   display: block;
   text-decoration: none;
   outline: none;
-  border: solid 2px #444444;
+  border: solid 2px $greyish_brown;
   font-size: 17px;
   font-weight: 700;
   line-height: 1.18;
   text-align: center;
-  color: #444444;
+  color: $greyish_brown;
   padding: 14px 20px;
   min-height: 52px;
   background-color: white;
   text-transform: uppercase;
 
   &--green {
-    border-color: #63d1bb;
-    background-color: #63d1bb;
+    border-color: $seafoam_blue;
+    background-color: $seafoam_blue;
     color: white;
   }
 }

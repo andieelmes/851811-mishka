@@ -5,7 +5,7 @@
 .form__text {
   font-size: 13px;
   line-height: 1.85;
-  color: #444444;
+  color: $greyish_brown;
   margin: 22px 0 25px;
 }
 
@@ -25,7 +25,7 @@
   font-size: 17px;
   font-weight: 700;
   line-height: 0.94;
-  color: #63d1bb;
+  color: $seafoam_blue;
   width: 100%;
   display: flex;
   text-transform: uppercase;
@@ -33,7 +33,7 @@
   &::after {
     flex-grow: 1;
     height: 1px;
-    background-color: #63d1bb;
+    background-color: $seafoam_blue;
     width: 100%;
     content: "";
     margin: 7px 0 0 25px;
@@ -89,10 +89,14 @@
   }
 }
 
+.form__textarea {
+  margin: 25px 0 0;
+}
+
 .form__notice {
   font-size: 14px;
   line-height: 1.14;
-  color: #444444;
+  color: $greyish_brown;
 }
 
 .form__button {

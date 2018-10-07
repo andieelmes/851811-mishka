@@ -6,7 +6,7 @@
   font-size: 25px;
   font-weight: 700;
   line-height: 1.2;
-  color: #000000;
+  color: $black;
   margin: 0;
 }
 
@@ -17,7 +17,7 @@
 }
 
 .about__item {
-  padding-bottom: 12.5px;
+  padding-bottom: 12px;
 }
 
 .about__icon {
@@ -33,6 +33,6 @@
   font-size: 17px;
   font-weight: 700;
   line-height: 1.18;
-  color: #000000;
+  color: $black;
   margin: 10px 0;
 }

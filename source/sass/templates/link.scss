@@ -1,5 +1,5 @@
 .link {
-  background-color: #56c3b2;
+  background-color: $greeny_blue;
   color: white;
   font-size: 19px;
   font-weight: 700;
@@ -10,23 +10,23 @@
   flex-wrap: nowrap;
 
   &:hover {
-    background-color: #46c1ae;
+    background-color: $greeny_blue_four;
   }
 
   &:active {
-    background-color: #46c1ae;
+    background-color: $greeny_blue_four;
     opacity: 0.3;
   }
 
   &--light {
-    background-color: #63d1bb;
+    background-color: $seafoam_blue;
 
     &:hover {
-      background-color: #59d5bc;
+      background-color: $greeny_blue_five;
     }
 
     &:active {
-      background-color: #59d5bc;
+      background-color: $greeny_blue_five;
     }
   }
 }

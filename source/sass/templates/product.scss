@@ -1,5 +1,5 @@
 .product {
-  background-color: #ffffff;
+  background-color: $white;
   margin-bottom: 30px;
 
   &:last-child {
@@ -8,7 +8,7 @@
 }
 
 .product__container {
-  border: solid 1px #ececec;
+  border: solid 1px $white_three;
   border-top: 0;
   padding: 7px 28px 6px;
 }
@@ -19,27 +19,27 @@
 
 .product__image {
   height: 195px;
-  background-color: #f9f9f9;
+  background-color: $grey_two;
 }
 
 .product__name {
   font-size: 17px;
   font-weight: 700;
   line-height: 1.41;
-  color: #000000;
+  color: $black;
   margin: 0;
   padding: 26px 28px 5px;
-  border: solid 1px #ececec;
+  border: solid 1px $white_three;
   border-bottom: 0;
 }
 
 .product__desc {
   font-size: 13px;
   line-height: 1.5;
-  color: #444444;
+  color: $greyish_brown;
   display: inline-block;
   vertical-align: top;
-  border-bottom: solid 1px #ececec;
+  border-bottom: solid 1px $white_three;
   width: 100%;
   padding-bottom: 24px;
 }
@@ -54,7 +54,7 @@
   font-size: 15px;
   font-weight: 700;
   line-height: 1.6;
-  color: #000000;
+  color: $black;
 }
 
 .product__add {

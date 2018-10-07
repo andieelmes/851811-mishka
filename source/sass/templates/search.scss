@@ -7,18 +7,18 @@
   font-size: 17px;
   font-weight: 700;
   line-height: 1.41;
-  color: #000000;
+  color: $black;
   border: 0;
 
   &::placeholder {
-    color: #000000;
+    color: $black;
   }
 }
 
 .search__label {
   width: 100%;
   display: block;
-  padding: 24px 30px 25px 23.7%;
+  padding: 24px 30px 25px 74px;
   position: relative;
 
   &::before {

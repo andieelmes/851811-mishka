@@ -37,15 +37,15 @@
 }
 
 .nav__item {
-  box-shadow: 0 1px 0 0 #ececec, inset 0 1px 0 0 #ececec;
+  box-shadow: 0 1px 0 0 $white_three, inset 0 1px 0 0 $white_three;
 }
 
 .nav__link {
   font-size: 17px;
   font-weight: 700;
   line-height: 1.41;
-  color: #000000;
-  padding: 27px 30px 28px 23.7%;
+  color: $black;
+  padding: 27px 30px 28px 74px;
   display: block;
   position: relative;
 
@@ -56,7 +56,7 @@
       top: 50%;
       transform: translateY(-50%);
       width: 21px;
-      height: 18px;
+      height: 20px;
       opacity: 0.2;
       background-image: url("../img/icon-cart.svg");
       background-repeat: no-repeat;

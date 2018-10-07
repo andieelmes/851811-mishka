@@ -1,6 +1,6 @@
 .card {
-  background-color: #ffffff;
-  border: solid 1px #ececec;
+  background-color: $white;
+  border: solid 1px $white_three;
   margin-bottom: 58px;
 }
 
@@ -8,7 +8,7 @@
   font-size: 17px;
   font-weight: 700;
   line-height: 1.41;
-  color: #000000;
+  color: $black;
   position: relative;
   margin: 0;
   padding: 23px 20px 26px 90px;
@@ -44,7 +44,7 @@
   padding: 0 34px;
   font-size: 13px;
   line-height: 1.85;
-  color: #444444;
+  color: $greyish_brown;
 }
 
 .card__button {

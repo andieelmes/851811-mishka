@@ -5,7 +5,7 @@
   min-height: 52px;
   display: inline-block;
   vertical-align: top;
-  border: solid 2px rgba(#444444, 0.1);
+  border: solid 2px rgba($greyish_brown, 0.1);
   text-align: center;
 }
 
@@ -13,5 +13,5 @@
   font-size: 17px;
   font-weight: 700;
   line-height: 0.94;
-  color: #444444;
+  color: $greyish_brown;
 }
