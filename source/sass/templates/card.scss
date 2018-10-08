@@ -87,4 +87,41 @@
   }
 }
 
+@media (min-width: 1250px) {
+  .card {
+    position: relative;
+    padding-bottom: 48px;
+    margin-bottom: 104px;
+  }
+
+  .card__video {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 65%;
+  }
+
+  .card__title {
+    margin-left: calc(65% + 40px);
+    padding: 97px 50px 26px 38px;
+
+    &::before {
+      top: 25%;
+      transform: none;
+    }
+  }
+
+  .card__info {
+    margin: 6px 0 35px;
+    padding: 0 38px;
+    margin-left: calc(65% + 40px);
+  }
+
+  .card__button {
+    margin-left: calc(65% + 78px);
+    margin-right: 57px;
+    margin-top: 11px;
+    margin-bottom: 11px;
+  }
+}
 

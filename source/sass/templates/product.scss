@@ -111,3 +111,45 @@
   }
 }
 
+@media (min-width: 1250px) {
+  .product {
+    width: 30%;
+    min-height: 100%;
+
+    &:last-child {
+      margin-bottom: 54px;
+    }
+  }
+
+  .product__image {
+    position: relative;
+    left: auto;
+    top: auto;
+    height: auto;
+    width: 100%;
+  }
+
+  .product__name {
+    padding: 26px 25px 5px;
+  }
+
+  .product__container {
+    padding: 4px 25px 17px;
+    justify-content: space-between;
+  }
+
+  .product__price {
+    font-size: 17px;
+    line-height: 1.41;
+  }
+
+  .product__desc {
+    font-size: 15px;
+    padding-bottom: 18px;
+  }
+
+  .product__info {
+    padding: 22px 8px 10px 0;
+  }
+}
+

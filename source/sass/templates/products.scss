@@ -14,3 +14,14 @@
     padding: 67px 0 52px;
   }
 }
+
+@media (min-width: 1250px) {
+  .products {
+    padding: 117px 0 2px;
+  }
+
+  .products__container {
+    align-content: stretch;
+    min-height: 100%;
+  }
+}
