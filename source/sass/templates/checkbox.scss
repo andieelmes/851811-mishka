@@ -31,3 +31,20 @@
 .checkbox__input:checked ~ .checkbox__name::before {
   background-image: url("../img/icon-tick.svg");
 }
+
+@media (min-width: 772px) {
+  .checkbox__name {
+    font-size: 19px;
+    line-height: 0.95;
+    padding-left: 81px;
+    min-height: 52px;
+    padding-top: 12px;
+
+    &::before {
+      width: 54px;
+      height: 52px;
+      top: 44%;
+    }
+  }
+
+}

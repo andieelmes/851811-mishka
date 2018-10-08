@@ -61,3 +61,30 @@
     line-height: 1.2;
   }
 }
+
+@media (min-width: 772px) {
+  .input {
+    display: flex;
+  }
+
+  .input__name {
+    line-height: 52px;
+    font-size: 19px;
+    padding-right: 25px;
+  }
+
+  .input__field {
+    padding: 5px 17px 9px;
+  }
+
+  .input--tel,
+  .input--email {
+    .input__field {
+      background-color: #f1f1f1;
+    }
+
+    &::after {
+      right: 25px;
+    }
+  }
+}
