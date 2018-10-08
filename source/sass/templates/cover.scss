@@ -34,12 +34,16 @@
 
 @media (min-width: 772px) {
   .cover {
-    background-image: url("../img/hero-tablet@1x.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     position: relative;
     padding-bottom: 13px;
+    background-color: #f1f1f1;
+
+    &--bg {
+      background-image: url("../img/hero-tablet@1x.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
 
     &::after {
       position: absolute;
@@ -83,7 +87,9 @@
 
 @media (min-width: 1250px) {
   .cover {
-    background-image: url("../img/hero-desktop@1x.jpg");
+    &--bg {
+      background-image: url("../img/hero-desktop@1x.jpg");
+    }
   }
 
   .cover__links {

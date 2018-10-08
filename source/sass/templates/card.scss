@@ -51,3 +51,40 @@
   margin: 0 34px;
   margin-bottom: 32px;
 }
+
+@media (min-width: 772px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 45px;
+    margin-bottom: 62px;
+  }
+
+  .card__video {
+    order: -1;
+  }
+
+  .card__title {
+    font-size: 20px;
+    line-height: 1.2;
+    padding: 40px 20px 26px 103px;
+
+    &::before {
+      left: 40px;
+      top: 56%;
+    }
+  }
+
+  .card__info {
+    font-size: 15px;
+    line-height: 2;
+    margin: 5px 0 35px;
+    padding: 0 40px;
+  }
+
+  .card__button {
+    margin: 0 40px;
+  }
+}
+
+

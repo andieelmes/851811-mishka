@@ -9,13 +9,23 @@
 
 <body>
   <!-- <img src="preview/mishka-catalog-mobile.jpg" style="position:absolute; left:50%;top: 0;margin-left:-160px;opacity:0.5;z-index:999"> -->
+  <!-- <img src="preview/mishka-catalog-tablet.jpg" style="position:absolute; left:50%;top: 0;margin-left:-386px;opacity:0.5;z-index:999"> -->
+  <!-- <img src="preview/mishka-catalog-desktop.jpg" style="position:absolute; left:50%;top: 0;margin-left:-625px;opacity:0.5;z-index:999"> -->
   <header class="header">
     <nav class="header__nav nav">
-      <a href="index.html" class="header__logo logo">
-        <img src="img/logo-mobile.svg" alt="Лого интернет-магазина Мишка">
-      </a>
-      <button class="nav__toggle" type="button" aria-label="Открыть меню"></button>
       <ul class="nav__wrapper">
+        <li class="header__item header__item--logo">
+          <a href="index.html" class="header__logo logo">
+            <picture>
+              <source srcset="img/logo-desktop.svg" media="(min-width: 1250px)">
+              <source srcset="img/logo-tablet.svg" media="(min-width: 772px)">
+              <img src="img/logo-mobile.svg" alt="Лого интернет-магазина Мишка">
+            </picture>
+          </a>
+        </li>
+        <li class="header__item header__item--toggle">
+          <button class="nav__toggle" type="button" aria-label="Открыть меню"></button>
+        </li>
         <li class="nav__item">
           <a href="catalog.html" class="nav__link">Каталог товаров</a>
         </li>
@@ -23,28 +33,51 @@
           <a href="form.html" class="nav__link">Вязание на заказ</a>
         </li>
         <li class="nav__item nav__item--search">
-          <form class="search" name="search" method="POST" action="https://echo.htmlacademy.ru">
+          <form class="nav__search search" name="search" method="POST" action="https://echo.htmlacademy.ru">
             <label class="search__label">
               <input type="text" name="search" class="search__input" id="search" required placeholder="Поиск по сайту">
             </label>
             <button type="submit" class="search__button visually-hidden" aria-label="Найти"></button>
           </form>
         </li>
-        <li class="nav__item">
+        <li class="nav__item nav__item--cart">
           <a href="#" class="nav__link nav__link--cart">Корзина: пока пуста</a>
         </li>
       </ul>
     </nav>
   </header>
   <main class="main">
-    <h1 class="page-title page-title--bg">Каталог товаров</h1>
+    <section class="cover">
+      <div class="container">
+        <ul class="cover__nav">
+          <li class="cover__item">
+            <a href="catalog.html">Каталог товаров</a>
+          </li>
+          <li class="cover__item">
+            <a href="form.html">Вязание на заказ</a>
+          </li>
+          <li class="cover__item cover__item--specials">
+            <a href="#">Новые поступления</a>
+          </li>
+          <li class="cover__item cover__item--specials">
+            <a href="#">Распродажа</a>
+          </li>
+        <li class="cover__caption">Бесплатная доставка по России</li>
+        </ul>
+      </div>
+      <h1 class="page-title page-title--bg">Каталог товаров</h1>
+    </section>
     <section class="products">
       <h2 class="visually-hidden">Товары</h2>
       <div class="container products__container">
         <article class="product">
           <a class="product__link" href="#">
             <div class="product__image">
-              <img src="img/photo-hare-mobile@1x.jpg" alt="Зайчик-попрыгайчик">
+              <picture>
+                <source srcset="img/photo-hare-desktop@1x.jpg" media="(min-width: 1250px)">
+                <source srcset="img/photo-hare-tablet@1x.jpg" media="(min-width: 772px)">
+                <img src="img/photo-hare-mobile@1x.jpg" alt="Зайчик-попрыгайчик">
+              </picture>
             </div>
             <h3 class="product__name">Зайчик-попрыгайчик</h3>
           </a>
@@ -61,7 +94,11 @@
         <article class="product">
           <a class="product__link" href="#">
             <div class="product__image">
-              <img src="img/photo-bowl-mobile@1x.jpg" alt="Корзинка для белья">
+              <picture>
+                <source srcset="img/photo-bowl-desktop@1x.jpg" media="(min-width: 1250px)">
+                <source srcset="img/photo-bowl-tablet@1x.jpg" media="(min-width: 772px)">
+                <img src="img/photo-bowl-mobile@1x.jpg" alt="Корзинка для белья">
+              </picture>
             </div>
             <h3 class="product__name">Корзинка для белья</h3>
           </a>
@@ -78,9 +115,13 @@
         <article class="product">
           <a class="product__link" href="#">
             <div class="product__image">
-              <img src="img/photo-toys-mobile@1x.jpg" alt="Большая корзинка для игрушек">
+              <picture>
+                <source srcset="img/photo-toys-desktop@1x.jpg" media="(min-width: 1250px)">
+                <source srcset="img/photo-toys-tablet@1x.jpg" media="(min-width: 772px)">
+                <img src="img/photo-toys-mobile@1x.jpg" alt="Большая корзинка для игрушек">
+              </picture>
             </div>
-            <h3 class="product__name">Большая корзинка для игрушек</h3>
+            <h3 class="product__name">Большая корзинка для игрушек</h3>
           </a>
           <div class="product__container">
             <span class="product__desc">Диаметр 30 см, высота 30 см</span>
@@ -98,7 +139,11 @@
       <section class="card">
         <h2 class="card__title">Процесс производства</h2>
         <a href="#" class="card__video">
-          <img src="img/video-mobile@1x.jpg" alt="Процесс производства товаров">
+          <picture>
+            <source srcset="img/video-desktop@1x.jpg" media="(min-width: 1250px)">
+            <source srcset="img/video-tablet@1x.jpg" media="(min-width: 772px)">
+            <img src="img/video-mobile@1x.jpg" alt="Процесс производства товаров">
+          </picture>
           <img class="card__play" src="img/icon-play.svg" alt="Кнопка проигрывания">
         </a>
         <p class="card__info">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
@@ -108,6 +153,9 @@
   </main>
   <footer class="footer">
     <div class="container">
+      <a href="index.html" class="footer__logo logo">
+        <img src="img/logo-footer.svg" alt="Лого интернет-магазина Мишка" width="102" height="34">
+      </a>
       <section class="footer__socials socials">
         <h2 class="visually-hidden">Найдите нас на</h2>
         <a href="#" class="socials__item socials__item--insta" aria-label="Instagram"></a>
@@ -119,7 +167,7 @@
         <img class="copyright__logo" src="img/htmlacademy.svg" alt="Лого HTML Академии" width="40" height="45">
       </a>
     </div>
-  </footer>
+    </footer>
   <section class="modal">
     <form class="modal__cart cart" name="cart" method="POST" action="https://echo.htmlacademy.ru">
       <div class="container">
