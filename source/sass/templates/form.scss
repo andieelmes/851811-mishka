@@ -243,3 +243,56 @@
     line-height: 1.7;
   }
 }
+
+
+@media (min-width: 1250px) {
+  .form {
+    padding-top: 88px;
+  }
+
+  .form__text {
+    padding: 0 112px;
+  }
+
+  .form .container {
+    padding: 0 162px;
+
+    &.form__buttons {
+      padding: 0 272px;
+    }
+  }
+
+  .form__caption {
+    width: 114px;
+  }
+
+  .form__label {
+    &--checkbox {
+      width: 32%;
+      padding: 25px 0 0;
+
+      &:nth-child(3n) {
+        width: 35.5%;
+      }
+
+      &:nth-child(-n + 3) {
+        padding-top: 0;
+      }
+    }
+  }
+
+  .form__block {
+    &--names,
+    &--tel,
+    &--email,
+    &--textarea {
+      .container {
+        padding-right: 272px;
+      }
+    }
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}

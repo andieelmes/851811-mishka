@@ -88,3 +88,12 @@
     }
   }
 }
+
+@media (min-width: 1250px) {
+  .input--tel,
+  .input--email {
+    &::after {
+      right: 7px;
+    }
+  }
+}
