@@ -34,7 +34,7 @@
   margin: 10px 0;
   font-size: 15px;
   line-height: 2;
-  color: $greyish_brown;
+  color: $border_secondary_color;
 }
 
 .reviews__author {
@@ -61,7 +61,7 @@
 
 .reviews__toggle {
   background-color: $white;
-  border: solid 1px $white_three;
+  border: solid 1px $border_primary_color;
   height: 52px;
   width: 50%;
   background-repeat: no-repeat;

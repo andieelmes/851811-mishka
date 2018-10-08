@@ -1,7 +1,7 @@
 .cart {
   background-color: white;
   box-shadow: 0 5px 10px 0 rgba(0, 1, 1, 0.25);
-  border: solid 1px $grey_one;
+  border: solid 1px #c6c6c6;
   max-width: 320px;
   width: 100%;
   padding: 20px 0 46px;
@@ -22,7 +22,7 @@
   font-size: 15px;
   line-height: 1.5;
   text-align: center;
-  color: $greyish_brown;
+  color: $border_secondary_color;
   margin: 10px 0;
 }
 

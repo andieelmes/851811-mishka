@@ -8,7 +8,7 @@
 }
 
 .product__container {
-  border: solid 1px $white_three;
+  border: solid 1px $border_primary_color;
   border-top: 0;
   padding: 7px 28px 6px;
 }
@@ -19,7 +19,7 @@
 
 .product__image {
   height: 195px;
-  background-color: $grey_two;
+  background-color: #f9f9f9;
 }
 
 .product__name {
@@ -29,17 +29,17 @@
   color: $black;
   margin: 0;
   padding: 26px 28px 5px;
-  border: solid 1px $white_three;
+  border: solid 1px $border_primary_color;
   border-bottom: 0;
 }
 
 .product__desc {
   font-size: 13px;
   line-height: 1.5;
-  color: $greyish_brown;
+  color: $border_secondary_color;
   display: inline-block;
   vertical-align: top;
-  border-bottom: solid 1px $white_three;
+  border-bottom: solid 1px $border_primary_color;
   width: 100%;
   padding-bottom: 24px;
 }

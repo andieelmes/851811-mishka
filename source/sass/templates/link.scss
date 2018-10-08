@@ -1,5 +1,5 @@
 .link {
-  background-color: $greeny_blue;
+  background-color: #56c3b2;
   color: white;
   font-size: 19px;
   font-weight: 700;
@@ -11,23 +11,23 @@
   justify-content: space-between;
 
   &:hover {
-    background-color: $greeny_blue_four;
+    background-color: #46c1ae;
   }
 
   &:active {
-    background-color: $greeny_blue_four;
+    background-color: #46c1ae;
     opacity: 0.3;
   }
 
   &--light {
-    background-color: $seafoam_blue;
+    background-color: $primary_color;
 
     &:hover {
-      background-color: $greeny_blue_five;
+      background-color: #59d5bc;
     }
 
     &:active {
-      background-color: $greeny_blue_five;
+      background-color: #59d5bc;
     }
   }
 }

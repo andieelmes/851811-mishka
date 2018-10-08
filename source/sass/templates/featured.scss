@@ -28,13 +28,13 @@
   font-size: 17px;
   font-weight: 700;
   line-height: 1.18;
-  color: $seafoam_blue;
+  color: $primary_color;
 }
 
 .featured__text {
   font-size: 15px;
   line-height: 1.6;
-  color: $greyish_brown;
+  color: $border_secondary_color;
   margin: 18px 0 17px;
 }
 
@@ -42,13 +42,13 @@
   width: 100%;
   font-size: 15px;
   line-height: 1.33;
-  color: $greyish_brown;
+  color: $border_secondary_color;
   border-collapse: collapse;
   margin: 15px 0;
 }
 
 .featured__description {
-  border-bottom: 1px solid $white_three;
+  border-bottom: 1px solid $border_primary_color;
   padding: 11px 0 7px;
   display: flex;
   margin: 0;
@@ -75,7 +75,7 @@
   font-weight: 700;
   line-height: 1.41;
   text-align: center;
-  color: $greyish_brown;
+  color: $border_secondary_color;
   display: block;
 }
 
