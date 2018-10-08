@@ -36,3 +36,14 @@
 .cart__button {
   width: 100%;
 }
+
+
+@media (min-width: 772px) {
+  .cart {
+    max-width: 566px;
+  }
+
+  .cart .container {
+    padding: 0 108px;
+  }
+}
