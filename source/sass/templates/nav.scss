@@ -1,15 +1,11 @@
 .nav {
   &.active {
-    width: 100%;
-
     .nav__wrapper {
       display: block;
+      width: 100%;
     }
 
     .nav__toggle {
-      position: absolute;
-      top: -65px;
-      right: 16px;
       background-image: url("../img/icon-menu-close.svg");
       background-size: 21px 20px;
     }
@@ -34,6 +30,9 @@
   outline: none;
   padding: 0;
   cursor: pointer;
+  position: absolute;
+  right: 16px;
+  top: 14px;
 }
 
 .nav__item {

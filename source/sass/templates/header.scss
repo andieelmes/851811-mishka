@@ -1,21 +1,11 @@
 .header {
   background-color: white;
-  position: relative;
-  justify-content: center;
-  display: flex;
-  flex-wrap: wrap;
 }
 
 .header__nav {
-  position: absolute;
-  right: 16px;
-  top: 14px;
-
-  &.active {
-    position: relative;
-    right: auto;
-    top: auto;
-  }
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .header__logo {
