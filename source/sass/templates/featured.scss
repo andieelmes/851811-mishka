@@ -68,6 +68,10 @@
 
 .featured__image {
   margin: 28px 0 25px;
+
+  img {
+    margin: auto;
+  }
 }
 
 .featured__price {
@@ -115,6 +119,11 @@
     width: 50%;
     margin: 0;
     max-height: 100%;
+
+    img {
+      margin-right: 0;
+      margin-left: auto;
+    }
   }
 
   .featured__buy {
@@ -173,6 +182,14 @@
       height: 23px;
       background-size: auto 23px;
     }
+  }
+
+  .featured .container {
+    position: relative;
+  }
+
+  .featured__image {
+    top: -53px;
   }
 
   .featured__main {

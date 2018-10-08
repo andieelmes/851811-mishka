@@ -63,11 +63,15 @@
   .contact {
     padding: 62px 0 19px;
     position: relative;
+  }
+
+  .contact .container {
+    position: relative;
 
     &::before {
       position: absolute;
       right: 55px;
-      top: 47px;
+      top: -15px;
       content: "";
       background-image: url("../img/icon-flag.svg");
       width: 47px;
@@ -105,13 +109,18 @@
     max-width: 230px;
     margin: 54px auto 38px;
   }
+
+  .contact__map {
+    margin-left: -52px;
+    margin-right: -52px;
+    width: calc(100% + 104px);
+  }
 }
 
 @media (min-width: 1250px) {
   .contact {
     position: relative;
     padding: 142px 0 67px;
-    padding-right: 43%;
     min-height: 500px;
     margin: 0 100px;
   }
@@ -119,12 +128,23 @@
   .contact__map {
     position: absolute;
     right: 0;
-    top: 72px;
+    top: -70px;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
   }
 
   .contact .container {
     padding: 0;
     padding-left: 174px;
+    position: relative;
+    padding-right: 51%;
+
+    &::before {
+      top: -8px;
+      left: 63px;
+      right: auto;
+    }
   }
 
   .contact__title {
