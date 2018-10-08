@@ -5,3 +5,10 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+@media (min-width: 772px) {
+  .container {
+    max-width: 772px;
+    padding: 0 52px;
+  }
+}

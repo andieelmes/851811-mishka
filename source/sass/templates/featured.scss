@@ -82,3 +82,33 @@
 .featured__button {
   margin: 27px 0;
 }
+
+@media (min-width: 772px) {
+  .featured__titles {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .featured__main {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+    padding-right: 50%;
+  }
+
+  .featured__image {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50%;
+  }
+
+  .featured__buy {
+    order: 2;
+  }
+
+  .featured__info {
+    order: 1;
+  }
+}

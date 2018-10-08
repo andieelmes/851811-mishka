@@ -64,3 +64,25 @@
     }
   }
 }
+
+@media (min-width: 772px) {
+  .nav__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .nav__toggle {
+    display: none;
+  }
+
+  .nav__item {
+    &--search {
+      order: -2;
+    }
+
+    &:last-child {
+      order: -1;
+    }
+  }
+}

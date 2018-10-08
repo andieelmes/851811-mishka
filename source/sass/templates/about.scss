@@ -36,3 +36,15 @@
   color: $black;
   margin: 10px 0;
 }
+
+@media (min-width: 772px) {
+  .about__items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .about__item {
+    width: 48%;
+  }
+}

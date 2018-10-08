@@ -6,3 +6,25 @@
   background-position: center;
   background-repeat: no-repeat;
 }
+
+@media (min-width: 772px) {
+  .cover {
+    background-image: url("../img/hero-tablet@1x.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .cover__top {
+    background: none;
+  }
+
+  .cover__links {
+    display: flex;
+    padding: 0 52px;
+  }
+
+  .cover__link {
+    width: 50%;
+  }
+}

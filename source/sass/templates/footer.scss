@@ -5,3 +5,10 @@
 .footer__socials {
   padding: 24px 0 28px;
 }
+
+@media (min-width: 772px) {
+  .footer .container {
+    display: flex;
+    justify-content: space-between;
+  }
+}

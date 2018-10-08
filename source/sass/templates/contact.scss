@@ -49,3 +49,14 @@
   display: flex;
   justify-content: center;
 }
+
+@media (min-width: 772px) {
+  .contact__items tbody {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .contact__item {
+    width: 50%;
+  }
+}
