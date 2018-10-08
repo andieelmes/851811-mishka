@@ -1,5 +1,5 @@
 .reviews {
-  padding: 21px 0;
+  padding: 23px 0;
   position: relative;
 
   &::after {
@@ -86,23 +86,55 @@
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
     background-position: left top;
-    background-size: 50% 100%;
+    padding: 77px 0 84px;
+
+    &::after {
+      height: 15px;
+      background-size: auto 15px;
+    }
+  }
+
+  .reviews .container {
+    position: relative;
   }
 
   .reviews__button {
     position: absolute;
     right: 52px;
-    top: 0;
+    top: 2px;
     margin: 0;
+    min-width: 175px;
   }
 
   .reviews__toggles {
     position: absolute;
-    bottom: 0;
+    bottom: 29px;
     right: 52px;
   }
 
   .reviews__toggle {
-    width: 100px;
+    width: 88px;
+    border: 0;
+  }
+
+  .reviews__title {
+    font-size: 43px;
+    line-height: 1.16;
+    padding-right: 200px;
+  }
+
+  .reviews__text {
+    font-size: 17px;
+    line-height: 1.8;
+  }
+
+  .reviews__item {
+    padding: 40px 0 2px;
+  }
+
+  .reviews__author {
+    padding: 48px 0;
+    padding-right: 200px;
   }
 }
+

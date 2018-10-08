@@ -12,3 +12,10 @@
     padding: 0 52px;
   }
 }
+
+@media (min-width: 1250px) {
+  .container {
+    max-width: 1250px;
+    padding: 0 100px;
+  }
+}

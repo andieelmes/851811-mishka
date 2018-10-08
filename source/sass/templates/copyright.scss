@@ -3,7 +3,6 @@
   width: 100%;
   justify-content: center;
   align-items: center;
-  padding: 14px 0 18px;
 }
 
 .copyright__text {
@@ -17,4 +16,14 @@
 
 .copyright__logo {
   margin-top: 2px;
+}
+
+@media (min-width: 772px) {
+  .copyright {
+    width: auto;
+  }
+
+  .copyright__logo {
+    margin-top: 0;
+  }
 }

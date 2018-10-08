@@ -36,3 +36,15 @@
   padding: 27px 0 30px;
   max-width: 66%;
 }
+
+@media (min-width: 772px) {
+  .link {
+    font-size: 20px;
+    line-height: 1.5;
+    padding: 0 35px;
+  }
+
+  .link__text {
+    padding: 28px 0 30px;
+  }
+}

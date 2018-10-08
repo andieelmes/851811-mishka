@@ -4,11 +4,40 @@
 
 .footer__socials {
   padding: 24px 0 28px;
+  padding-right: 7px;
+}
+
+.footer__logo {
+  display: none;
+}
+
+.footer__copyright {
+  padding: 14px 0 18px;
 }
 
 @media (min-width: 772px) {
+  .footer {
+    padding: 52px 0;
+    overflow: hidden;
+  }
+
   .footer .container {
     display: flex;
     justify-content: space-between;
+  }
+
+  .footer__logo {
+    display: inline-block;
+    flex-shrink: 0;
+  }
+
+  .footer__socials {
+    padding: 0;
+    padding-left: 78px;
+  }
+
+  .footer__copyright {
+    padding: 0;
+    margin-right: -6px;
   }
 }

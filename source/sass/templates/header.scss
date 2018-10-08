@@ -12,3 +12,22 @@
   margin-right: 2px;
   padding: 22px 30px 22px;
 }
+
+.header__item {
+  text-align: center;
+}
+
+@media (min-width: 772px) {
+  .header__logo {
+    padding: 22px 52px 20px;
+  }
+
+  .header__item {
+    flex-grow: 1;
+    text-align: left;
+
+    &--toggle {
+      display: none;
+    }
+  }
+}

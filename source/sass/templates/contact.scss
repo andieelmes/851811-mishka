@@ -48,9 +48,41 @@
 .contact__map {
   display: flex;
   justify-content: center;
+  position: relative;
 }
 
+.contact__pin {
+  position: absolute;
+  top: 41%;
+  left: 52%;
+  transform: translate(-50%, -50%);
+}
+
+
 @media (min-width: 772px) {
+  .contact {
+    padding: 62px 0 19px;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      right: 55px;
+      top: 47px;
+      content: "";
+      background-image: url("../img/icon-flag.svg");
+      width: 47px;
+      height: 81px;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .contact__items {
+    font-size: 17px;
+    line-height: 1.76;
+    margin: 38px 0 42px;
+  }
+
   .contact__items tbody {
     display: flex;
     justify-content: space-between;
@@ -58,5 +90,33 @@
 
   .contact__item {
     width: 50%;
+  }
+
+  .contact__title {
+    font-size: 43px;
+    line-height: 1.16;
+  }
+
+  .contact__name {
+    flex-basis: 22.5%;
+  }
+
+  .contact__button {
+    max-width: 230px;
+    margin: 54px auto 38px;
+  }
+}
+
+@media (min-width: 1250px) {
+  .contact {
+    position: relative;
+    padding-right: 50%;
+    min-height: 500px;
+  }
+
+  .contact__map {
+    position: absolute;
+    right: 100px;
+    top: 0;
   }
 }
