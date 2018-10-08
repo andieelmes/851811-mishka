@@ -73,6 +73,12 @@
   .cover__nav {
     display: flex;
   }
+
+  .cover__item {
+    &--specials {
+      display: none;
+    }
+  }
 }
 
 @media (min-width: 1250px) {
@@ -83,5 +89,18 @@
   .cover__links {
     display: flex;
     padding: 0 100px;
+  }
+
+  .cover__item {
+    display: none;
+    padding-right: 62px;
+
+    &--specials {
+      display: block;
+    }
+  }
+
+  .cover__top {
+    padding: 94px 0 359px;
   }
 }

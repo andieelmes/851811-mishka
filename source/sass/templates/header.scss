@@ -19,7 +19,7 @@
 
 @media (min-width: 772px) {
   .header__logo {
-    padding: 22px 52px 20px;
+    padding: 22px 0 20px;
   }
 
   .header__item {
@@ -29,5 +29,19 @@
     &--toggle {
       display: none;
     }
+  }
+}
+
+@media (min-width: 1250px) {
+  .header__item {
+    &--logo {
+      order: 3;
+      text-align: center;
+    }
+  }
+
+  .header__logo {
+    margin-right: 63px;
+    padding: 9px 0 6px;
   }
 }

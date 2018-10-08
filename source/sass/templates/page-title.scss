@@ -17,5 +17,14 @@
   .page-title {
     font-size: 43px;
     line-height: 1.16;
+    padding: 0 52px;
+  }
+}
+
+@media (min-width: 1250px) {
+  .page-title {
+    font-size: 53px;
+    line-height: 1.08;
+    padding: 0 100px;
   }
 }

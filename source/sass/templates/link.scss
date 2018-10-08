@@ -48,3 +48,9 @@
     padding: 28px 0 30px;
   }
 }
+
+@media (min-width: 1250px) {
+  .link__text {
+    max-width: 39%;
+  }
+}

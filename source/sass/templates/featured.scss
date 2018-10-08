@@ -164,21 +164,47 @@
 }
 
 @media (min-width: 1250px) {
+  .featured {
+    padding: 111px 0 64px;
+    position: relative;
+    margin: 0 100px;
+
+    &::after {
+      height: 23px;
+      background-size: auto 23px;
+    }
+  }
+
   .featured__main {
     position: static;
+    padding-right: 62.1%;
   }
 
   .featured__block {
-    position: relative;
+    padding-left: 74px;
   }
 
   .featured__titles {
     position: relative;
+    z-index: 100;
   }
 
   .featured__prefix {
     position: absolute;
-    left: -150px;
-    top: 0;
+    left: -128px;
+    top: 5px;
+  }
+
+  .featured__title {
+    font-size: 53px;
+    line-height: 1.08;
+  }
+
+  .featured__descriptions {
+    margin: 46px 0;
+  }
+
+  .featured__buy {
+    margin-top: 66px;
   }
 }

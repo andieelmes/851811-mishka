@@ -138,3 +138,39 @@
   }
 }
 
+@media (min-width: 1250px) {
+  .reviews {
+    padding: 70px 0 158px;
+    margin: 0 100px;
+
+    &::after {
+      height: 23px;
+      background-size: auto 23px;
+    }
+  }
+
+  .reviews__title {
+    font-size: 53px;
+    line-height: 1.08;
+    padding-left: 74px;
+  }
+
+  .reviews__list {
+    padding-left: 74px;
+  }
+
+  .reviews__author {
+    padding: 28px 0;
+  }
+
+  .reviews__toggles {
+    bottom: 9px;
+    right: 0;
+  }
+
+  .reviews__button {
+    right: 0;
+    top: 9px;
+  }
+}
+
