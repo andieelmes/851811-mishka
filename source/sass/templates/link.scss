@@ -1,6 +1,6 @@
 .link {
   background-color: #56c3b2;
-  color: white;
+  color: #ffffff;
   font-size: 19px;
   font-weight: 700;
   line-height: 1.26;
@@ -9,14 +9,19 @@
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
+  align-items: center;
+  transition: all 0.2s;
 
   &:hover {
     background-color: #46c1ae;
+    opacity: 1;
+    //padding-bottom: 34px;
   }
 
   &:active {
     background-color: #46c1ae;
-    opacity: 0.3;
+    color: $white_30;
+    opacity: 1;
   }
 
   &--light {
