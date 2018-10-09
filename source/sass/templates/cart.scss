@@ -41,9 +41,24 @@
 @media (min-width: 772px) {
   .cart {
     max-width: 566px;
+    padding: 24px 0 46px;
   }
 
   .cart .container {
-    padding: 0 108px;
+    padding: 0 105px;
+  }
+
+  .cart__title {
+    font-size: 30px;
+    line-height: 1.9;
+  }
+
+  .cart__caption {
+    font-size: 17px;
+    line-height: 1.76;
+  }
+
+  .cart__sizes {
+    margin: 21px 0 31px;
   }
 }

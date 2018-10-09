@@ -1,12 +1,11 @@
 .size {
   max-width: 82px;
   width: 100%;
-  padding: 9px 10px;
   min-height: 52px;
-  display: inline-block;
-  vertical-align: top;
-  border: solid 2px rgba($border_secondary_color, 0.1);
+  display: flex;
+  align-items: center;
   text-align: center;
+  cursor: pointer;
 }
 
 .size__name {
@@ -14,4 +13,22 @@
   font-weight: 700;
   line-height: 0.94;
   color: $border_secondary_color;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 9px 10px;
+  border: solid 2px rgba($border_secondary_color, 0.1);
+}
+
+.size__input:checked ~ .size__name {
+  border-color: $primary_color;
+}
+
+
+@media (min-width: 772px) {
+  .size {
+    max-width: 32%;
+  }
 }
