@@ -4,11 +4,15 @@
   max-width: 260px;
 
   &:hover {
-    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+    .product__container {
+      box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+    }
   }
 
   &:active {
-    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+    .product__container {
+      box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+    }
   }
 
   &:last-child {
@@ -18,7 +22,6 @@
 
 .product__container {
   border: solid 1px $border_primary_color;
-  border-top: 0;
   padding: 7px 28px 6px;
 }
 
@@ -27,18 +30,10 @@
 
   &:hover {
     opacity: 1;
-
-    .product__name {
-      opacity: 0.6;
-    }
   }
 
   &:active {
     opacity: 1;
-
-    .product__name {
-      opacity: 0.3;
-    }
   }
 }
 
@@ -53,9 +48,7 @@
   line-height: 1.41;
   color: $black;
   margin: 0;
-  padding: 26px 28px 5px;
-  border: solid 1px $border_primary_color;
-  border-bottom: 0;
+  padding: 21px 0 11px;
 }
 
 .product__desc {
@@ -97,33 +90,30 @@
     position: relative;
     min-height: 334px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     margin-bottom: 54px;
     max-width: 669px;
   }
 
   .product__image {
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
+    height: auto;
+  }
+
+  .product__link {
     width: 50%;
   }
 
   .product__container {
-    padding: 4px 28px 6px;
-    padding-left: calc(50% + 26px);
-    flex-grow: 1;
+    padding: 2px 25px 6px;
     display: flex;
+    width: 50%;
     flex-direction: column;
-    justify-content: space-between;
   }
 
   .product__name {
     font-size: 20px;
     line-height: 1.2;
-    padding-left: calc(50% + 26px);
-    padding-top: 24px;
+    padding: 24px 0 8px;
   }
 
   .product__desc {
@@ -134,6 +124,8 @@
   .product__info {
     padding: 21px 6px;
     border-top: solid 1px #ececec;
+    margin-bottom: 0;
+    margin-top: auto;
   }
 }
 
@@ -141,27 +133,26 @@
   .product {
     width: 30%;
     min-height: 100%;
+    flex-direction: column;
 
     &:last-child {
       margin-bottom: 54px;
     }
   }
 
-  .product__image {
-    position: relative;
-    left: auto;
-    top: auto;
-    height: auto;
-    width: 100%;
-  }
-
   .product__name {
-    padding: 26px 25px 5px;
+    padding: 23px 0 9px;
   }
 
   .product__container {
     padding: 4px 25px 17px;
     justify-content: space-between;
+    width: 100%;
+    flex-grow: 1;
+  }
+
+  .product__link {
+    width: 100%;
   }
 
   .product__price {
