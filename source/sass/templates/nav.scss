@@ -72,6 +72,21 @@
     display: none;
     box-shadow: 0 1px 0 0 $border_primary_color, inset 0 1px 0 0 $border_primary_color;
   }
+
+  .no-js {
+    .nav__item {
+      display: block;
+    }
+
+    .nav__wrapper {
+      width: 100%;
+    }
+
+    .nav__toggle {
+      background-image: url("../img/icon-menu-close.svg");
+      background-size: 21px 20px;
+    }
+  }
 }
 
 @media (min-width: 772px) {
