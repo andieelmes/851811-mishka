@@ -20,6 +20,10 @@
   justify-content: center;
   padding: 9px 10px;
   border: solid 2px rgba($border_secondary_color, 0.1);
+
+  &:hover {
+    border-color: rgba($border_secondary_color, 0.3);
+  }
 }
 
 .size__input:checked ~ .size__name {

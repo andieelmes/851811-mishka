@@ -13,4 +13,10 @@
   &::placeholder {
     color: rgba(68, 68, 68, 0.3);
   }
+
+  &:hover,
+  &:active {
+    border-color: #62d1ba;
+    outline: none;
+  }
 }

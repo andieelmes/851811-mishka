@@ -3,6 +3,14 @@
   margin-bottom: 30px;
   max-width: 260px;
 
+  &:hover {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+  }
+
   &:last-child {
     margin-bottom: 0;
   }
@@ -16,6 +24,22 @@
 
 .product__link {
   display: block;
+
+  &:hover {
+    opacity: 1;
+
+    .product__name {
+      opacity: 0.6;
+    }
+  }
+
+  &:active {
+    opacity: 1;
+
+    .product__name {
+      opacity: 0.3;
+    }
+  }
 }
 
 .product__image {
