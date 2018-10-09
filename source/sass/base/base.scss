@@ -46,3 +46,13 @@ a:hover {
 a:active {
   opacity: 0.3;
 }
+
+a[href^="mailto:"]:hover {
+  color: #46c1ae;
+  opacity: 1;
+}
+
+a[href^="mailto:"]:active {
+  color: #46c1ae;
+  opacity: 0.3;
+}

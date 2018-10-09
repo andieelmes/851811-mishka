@@ -19,4 +19,16 @@
     background-color: $primary_color;
     color: white;
   }
+
+  &:hover {
+    background-color: $border_secondary_color;
+    color: $white;
+    opacity: 1;
+  }
+
+  &:active {
+    background-color: $border_secondary_color;
+    color: $white_30;
+    opacity: 1;
+  }
 }
