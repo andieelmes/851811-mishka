@@ -5,6 +5,8 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  max-width: 1250px;
+  margin: 0 auto;
 }
 
 .cover__nav {
@@ -95,6 +97,8 @@
   .cover__links {
     display: flex;
     padding: 0 100px;
+    max-width: 1250px;
+    margin: 0 auto;
   }
 
   .cover__item {

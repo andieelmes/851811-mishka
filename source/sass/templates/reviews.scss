@@ -92,10 +92,7 @@
 
 @media (min-width: 772px) {
   .reviews {
-    background-image: url("../img/review@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: left top;
-    padding: 77px 0 84px;
+    padding: 0;
 
     &::after {
       height: 15px;
@@ -105,6 +102,11 @@
 
   .reviews .container {
     position: relative;
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: left top;
+    padding-top: 77px;
+    padding-bottom: 84px;
   }
 
   .reviews__button {
@@ -149,13 +151,17 @@
 
 @media (min-width: 1250px) {
   .reviews {
-    padding: 70px 0 158px;
     margin: 0 100px;
 
     &::after {
       height: 23px;
       background-size: auto 23px;
     }
+  }
+
+  .reviews .container {
+    padding-top: 70px;
+    padding-bottom: 158px;
   }
 
   .reviews__title {
