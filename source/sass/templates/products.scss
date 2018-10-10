@@ -4,6 +4,32 @@
 
 .products__container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
+}
+
+
+@media (min-width: 772px) {
+  .products {
+    padding: 67px 0 52px;
+  }
+
+  .products__container {
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 1250px) {
+  .products {
+    padding: 117px 0 2px;
+  }
+
+  .products__container {
+    align-content: stretch;
+    min-height: 100%;
+    flex-direction: row;
+    align-items: initial;
+  }
 }

@@ -35,3 +35,14 @@
     content: "";
   }
 }
+
+@media (min-width: 772px) {
+  .search__label {
+    padding: 24px 30px 25px 49px;
+    height: 100%;
+  }
+
+  .search__input {
+    font-size: 0;
+  }
+}

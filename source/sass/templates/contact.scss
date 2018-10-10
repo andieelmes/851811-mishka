@@ -14,7 +14,7 @@
   width: 100%;
   font-size: 15px;
   line-height: 2;
-  color: $greyish_brown;
+  color: $border_secondary_color;
   border-collapse: collapse;
   margin: 14px 0 19px;
 }
@@ -38,7 +38,7 @@
 }
 
 .contact__link {
-  border-bottom: 1px solid $greeny_blue_three;
+  border-bottom: 1px solid #00e2bf;
 }
 
 .contact__button {
@@ -48,4 +48,124 @@
 .contact__map {
   display: flex;
   justify-content: center;
+  position: relative;
+}
+
+.contact__pin {
+  position: absolute;
+  top: 41%;
+  left: 52%;
+  transform: translate(-50%, -50%);
+}
+
+
+@media (min-width: 772px) {
+  .contact {
+    padding: 62px 0 19px;
+    position: relative;
+  }
+
+  .contact .container {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      right: 55px;
+      top: -15px;
+      content: "";
+      background-image: url("../img/icon-flag.svg");
+      width: 47px;
+      height: 81px;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .contact__items {
+    font-size: 17px;
+    line-height: 1.76;
+    margin: 38px 0 42px;
+  }
+
+  .contact__items tbody {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .contact__item {
+    width: 50%;
+  }
+
+  .contact__title {
+    font-size: 43px;
+    line-height: 1.16;
+  }
+
+  .contact__name {
+    flex-basis: 22.5%;
+  }
+
+  .contact__button {
+    max-width: 230px;
+    margin: 54px auto 38px;
+  }
+
+  .contact__map {
+    margin-left: -52px;
+    margin-right: -52px;
+    width: calc(100% + 104px);
+  }
+}
+
+@media (min-width: 1250px) {
+  .contact {
+    position: relative;
+    padding: 142px 0 67px;
+    min-height: 500px;
+    margin: 0 100px;
+  }
+
+  .contact__map {
+    position: absolute;
+    right: 0;
+    top: -70px;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+  }
+
+  .contact .container {
+    padding: 0;
+    padding-left: 174px;
+    position: relative;
+    padding-right: 51%;
+
+    &::before {
+      top: -8px;
+      left: 63px;
+      right: auto;
+    }
+  }
+
+  .contact__title {
+    font-size: 53px;
+    line-height: 1.08;
+  }
+
+  .contact__items {
+    width: 100%;
+    display: block;
+  }
+
+  .contact__item {
+    width: 100%;
+  }
+
+  .contact__items tbody {
+    flex-wrap: wrap;
+  }
+
+  .contact__button {
+    margin: 64px 0 38px;
+  }
 }

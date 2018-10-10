@@ -5,7 +5,7 @@
 .form__text {
   font-size: 13px;
   line-height: 1.85;
-  color: $greyish_brown;
+  color: $border_secondary_color;
   margin: 22px 0 25px;
 }
 
@@ -25,7 +25,7 @@
   font-size: 17px;
   font-weight: 700;
   line-height: 0.94;
-  color: $seafoam_blue;
+  color: $primary_color;
   width: 100%;
   display: flex;
   text-transform: uppercase;
@@ -33,7 +33,7 @@
   &::after {
     flex-grow: 1;
     height: 1px;
-    background-color: $seafoam_blue;
+    background-color: $primary_color;
     width: 100%;
     content: "";
     margin: 7px 0 0 25px;
@@ -48,42 +48,42 @@
   padding: 14px 0 11px;
   display: block;
 
-  &:first-of-type {
+  &.radio:first-child {
     padding-top: 34px;
   }
 
-  &--checkbox {
+  &.checkbox {
     padding: 17px 0 14px;
 
     &:last-child {
       padding-bottom: 11px;
     }
 
-    &:first-of-type {
+    &:first-child {
       padding-top: 37px;
     }
   }
 
-  &--input {
+  &.input {
     padding: 9px 0 13px;
 
-    &:first-of-type {
+    &:first-child {
       padding-top: 29px;
     }
   }
 
-  &--tel {
+  &.input--tel {
     padding: 0 0 13px;
 
-    &:first-of-type {
+    &:first-child {
       padding-top: 6px;
     }
   }
 
-  &--email {
+  &.input--email {
     padding: 0 0 13px;
 
-    &:first-of-type {
+    &:first-child {
       padding-top: 7px;
     }
   }
@@ -96,11 +96,204 @@
 .form__notice {
   font-size: 14px;
   line-height: 1.14;
-  color: $greyish_brown;
+  color: $border_secondary_color;
 }
 
 .form__button {
   width: 100%;
   margin: 25px 0;
   cursor: pointer;
+}
+
+@media (min-width: 772px) {
+  .form {
+    padding-top: 38px;
+    padding-bottom: 48px;
+  }
+
+  .form__text {
+    font-size: 17px;
+    line-height: 1.76;
+    margin-bottom: 11px;
+  }
+
+  .form__block {
+    margin: 0;
+    padding: 50px 0 48px;
+
+    &:nth-child(2n) {
+      background-color: #f1f1f1;
+
+      &.form__block--textarea {
+        background-color: transparent;
+      }
+    }
+
+    &--email,
+    &--tel {
+      background-color: #f1f1f1;
+    }
+
+    &--tel {
+      padding: 53px 0 10px;
+    }
+
+    &--email {
+      padding: 15px 0 48px;
+    }
+
+    &:last-of-type {
+      margin-bottom: 5px;
+    }
+  }
+
+  .form__block .container {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .form__caption {
+    &::after {
+      display: none;
+    }
+
+    width: 24.7%;
+    padding-right: 20px;
+    padding-top: 14px;
+    flex-shrink: 0;
+  }
+
+  .form__labels {
+    flex-grow: 1;
+
+    &--checkbox {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+
+  .form__label {
+    padding: 14px 0 11px;
+
+    &.radio:first-child {
+      padding-top: 0;
+    }
+
+    &.checkbox {
+      padding: 24px 0 0;
+      width: 48%;
+
+      &:last-child {
+        padding-bottom: 0;
+      }
+
+      &:first-child,
+      &:nth-child(-n + 2) {
+        padding-top: 0;
+      }
+    }
+
+    &.input {
+      padding: 0 0 24px;
+
+      &:first-child {
+        padding-top: 0;
+      }
+    }
+
+    &.input--tel {
+      padding: 0 0 13px;
+
+      &:first-child {
+        padding-top: 0;
+      }
+    }
+
+    &.input--email {
+      padding: 0 0 13px;
+
+      &:first-child {
+        padding-top: 0;
+      }
+    }
+
+    &:last-child {
+      padding-bottom: 0;
+    }
+  }
+
+  .form__textarea {
+    margin-top: 0;
+  }
+
+  .form__buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .form__button {
+    order: -1;
+    margin: 0;
+    max-width: 230px;
+  }
+
+  .form__notice {
+    font-size: 17px;
+    line-height: 1.7;
+  }
+}
+
+
+@media (min-width: 1250px) {
+  .form {
+    padding-top: 88px;
+  }
+
+  .form__text {
+    padding: 0 112px;
+  }
+
+  .form .container {
+    padding: 0 162px;
+
+    &.form__buttons {
+      padding: 0 272px;
+    }
+  }
+
+  .form__caption {
+    width: 114px;
+  }
+
+  .form__label {
+    &.checkbox {
+      width: 32%;
+      padding: 25px 0 0;
+
+      &:nth-child(3n) {
+        width: 35.5%;
+      }
+
+      &:nth-child(-n + 3) {
+        padding-top: 0;
+      }
+    }
+  }
+
+  .form__block {
+    &--names,
+    &--tel,
+    &--email,
+    &--textarea {
+      .container {
+        padding-right: 272px;
+      }
+    }
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
 }

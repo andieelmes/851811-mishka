@@ -1,7 +1,26 @@
 .card {
   background-color: $white;
-  border: solid 1px $white_three;
+  border: solid 1px $border_primary_color;
   margin-bottom: 58px;
+  max-width: 260px;
+  margin-left: auto;
+  margin-right: auto;
+
+  &:hover {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+
+    .card__play {
+      transform: translate(-50%, -50%) scale(1.2);
+    }
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+
+    .card__play {
+      transform: translate(-50%, -50%) scale(0.8);
+    }
+  }
 }
 
 .card__title {
@@ -30,6 +49,11 @@
 .card__video {
   display: block;
   position: relative;
+
+  &:hover,
+  &:active {
+    opacity: 1;
+  }
 }
 
 .card__play {
@@ -37,6 +61,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  transition: all 0.2s;
 }
 
 .card__info {
@@ -44,10 +69,85 @@
   padding: 0 34px;
   font-size: 13px;
   line-height: 1.85;
-  color: $greyish_brown;
+  color: $border_secondary_color;
 }
 
 .card__button {
   margin: 0 34px;
   margin-bottom: 32px;
+}
+
+@media (min-width: 772px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 45px;
+    margin-bottom: 62px;
+    max-width: 669px;
+  }
+
+  .card__video {
+    order: -1;
+  }
+
+  .card__title {
+    font-size: 20px;
+    line-height: 1.2;
+    padding: 40px 20px 26px 103px;
+
+    &::before {
+      left: 40px;
+      top: 56%;
+    }
+  }
+
+  .card__info {
+    font-size: 15px;
+    line-height: 2;
+    margin: 5px 0 35px;
+    padding: 0 40px;
+  }
+
+  .card__button {
+    margin: 0 40px;
+  }
+}
+
+@media (min-width: 1250px) {
+  .card {
+    position: relative;
+    padding-bottom: 48px;
+    margin-bottom: 104px;
+    max-width: 100%;
+  }
+
+  .card__video {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 65%;
+  }
+
+  .card__title {
+    margin-left: calc(65% + 40px);
+    padding: 97px 50px 26px 38px;
+
+    &::before {
+      top: 25%;
+      transform: none;
+    }
+  }
+
+  .card__info {
+    margin: 6px 0 35px;
+    padding: 0 38px;
+    margin-left: calc(65% + 40px);
+  }
+
+  .card__button {
+    margin-left: calc(65% + 78px);
+    margin-right: 57px;
+    margin-top: 11px;
+    margin-bottom: 11px;
+  }
 }

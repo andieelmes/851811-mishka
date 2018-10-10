@@ -1,5 +1,18 @@
 .checkbox {
   display: block;
+  cursor: pointer;
+
+  &:hover {
+    .checkbox__name::before {
+      border-color: #62d1ba;
+    }
+  }
+
+  &:active {
+    .checkbox__name::before {
+      border-color: rgba($border_secondary_color, 0.3);
+    }
+  }
 }
 
 .checkbox__name {
@@ -15,7 +28,7 @@
   &::before {
     position: absolute;
     background-color: white;
-    border: solid 2px $greyish_brown;
+    border: solid 2px $border_secondary_color;
     width: 40px;
     height: 40px;
     content: "";
@@ -30,4 +43,25 @@
 
 .checkbox__input:checked ~ .checkbox__name::before {
   background-image: url("../img/icon-tick.svg");
+}
+
+@media (min-width: 772px) {
+  .checkbox__name {
+    font-size: 19px;
+    line-height: 0.95;
+    padding-left: 81px;
+    min-height: 52px;
+    padding-top: 12px;
+
+    &::before {
+      width: 54px;
+      height: 52px;
+      top: 50%;
+      background-color: #f1f1f1;
+    }
+  }
+
+  .checkbox__input:checked ~ .checkbox__name::before {
+    background-size: 33px 22px;
+  }
 }

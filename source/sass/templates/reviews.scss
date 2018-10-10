@@ -1,5 +1,5 @@
 .reviews {
-  padding: 21px 0;
+  padding: 23px 0;
   position: relative;
 
   &::after {
@@ -34,7 +34,7 @@
   margin: 10px 0;
   font-size: 15px;
   line-height: 2;
-  color: $greyish_brown;
+  color: $border_secondary_color;
 }
 
 .reviews__author {
@@ -54,18 +54,19 @@
   padding-top: 7px;
 }
 
-.reviews__toggles {
+.reviews__controls {
   display: flex;
   margin: 2px 0 20px;
 }
 
-.reviews__toggle {
+.reviews__control {
   background-color: $white;
-  border: solid 1px $white_three;
+  border: solid 1px $border_primary_color;
   height: 52px;
   width: 50%;
   background-repeat: no-repeat;
   background-position: center;
+  cursor: pointer;
 
   &:nth-child(odd) {
     border-right: 0;
@@ -75,8 +76,114 @@
   &:nth-child(even) {
     background-image: url("../img/icon-right-arrow.svg");
   }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .reviews__button {
   margin: 38px 0 29px;
+}
+
+@media (min-width: 772px) {
+  .reviews {
+    padding: 0;
+
+    &::after {
+      height: 15px;
+      background-size: auto 15px;
+    }
+  }
+
+  .reviews .container {
+    position: relative;
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: left top;
+    padding-top: 77px;
+    padding-bottom: 67px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .reviews__button {
+    position: absolute;
+    right: 52px;
+    top: 79px;
+    margin: 0;
+    min-width: 175px;
+  }
+
+  .reviews__control {
+    width: 88px;
+    border: 0;
+  }
+
+  .reviews__title {
+    font-size: 43px;
+    line-height: 1.16;
+    padding-right: 200px;
+  }
+
+  .reviews__text {
+    font-size: 17px;
+    line-height: 1.8;
+  }
+
+  .reviews__item {
+    padding: 40px 0 2px;
+    width: 100%;
+  }
+
+  .reviews__author {
+    padding: 46px 0;
+    width: auto;
+  }
+
+  .reviews__controls {
+    padding: 46px 0;
+  }
+}
+
+@media (min-width: 1250px) {
+  .reviews {
+    margin: 0 100px;
+
+    &::after {
+      height: 23px;
+      background-size: auto 23px;
+    }
+  }
+
+  .reviews .container {
+    padding: 70px 0 137px 175px;
+  }
+
+  .reviews__title {
+    font-size: 53px;
+    line-height: 1.08;
+  }
+
+  .reviews__list {
+    padding-left: 74px;
+  }
+
+  .reviews__author {
+    padding: 27px 0;
+  }
+
+  .reviews__controls {
+    padding: 27px 0;
+  }
+
+  .reviews__button {
+    right: 0;
+    top: 79px;
+  }
 }
