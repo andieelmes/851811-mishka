@@ -8,9 +8,10 @@
 }
 
 .cover__top {
-  padding: 71px 0 122px;
+  padding: 71px 0 71px;
   max-width: 1250px;
   margin: 0 auto;
+  min-height: 283px;
 }
 
 .cover__nav {
@@ -68,7 +69,8 @@
 
   .cover__top {
     background: none;
-    padding: 94px 0 375px;
+    padding: 94px 0 150px;
+    min-height: 567px;
   }
 
   .cover__links {
@@ -115,6 +117,7 @@
   }
 
   .cover__top {
-    padding: 94px 0 359px;
+    padding: 94px 0 150px;
+    min-height: 567px;
   }
 }
