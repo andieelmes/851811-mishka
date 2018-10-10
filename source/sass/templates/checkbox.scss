@@ -60,4 +60,8 @@
       background-color: #f1f1f1;
     }
   }
+
+  .checkbox__input:checked ~ .checkbox__name::before {
+    background-size: 33px 22px;
+  }
 }
