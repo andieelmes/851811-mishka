@@ -30,6 +30,22 @@
   .footer__logo {
     display: inline-block;
     flex-shrink: 0;
+
+    &[href] {
+      &:hover {
+        path {
+          fill: #46c1ae;
+        }
+      }
+
+      &:active {
+        opacity: 0.3;
+
+        path {
+          fill: #46c1ae;
+        }
+      }
+    }
   }
 
   .footer__socials {

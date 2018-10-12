@@ -82,6 +82,20 @@
   margin-top: 1px;
   display: block;
   margin-right: -3px;
+
+  &:hover {
+    path {
+      fill: $primary_color;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+
+    path {
+      fill: $primary_color;
+    }
+  }
 }
 
 @media (min-width: 772px) {
