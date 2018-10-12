@@ -119,6 +119,7 @@
     padding-bottom: 48px;
     margin-bottom: 104px;
     max-width: 100%;
+    padding-left: 65%;
   }
 
   .card__video {
@@ -129,8 +130,8 @@
   }
 
   .card__title {
-    margin-left: calc(65% + 40px);
-    padding: 97px 50px 26px 38px;
+    margin-left: 40px;
+    padding: 96px 50px 26px 38px;
 
     &::before {
       top: 25%;
@@ -141,11 +142,11 @@
   .card__info {
     margin: 6px 0 35px;
     padding: 0 38px;
-    margin-left: calc(65% + 40px);
+    margin-left: 40px;
   }
 
   .card__button {
-    margin-left: calc(65% + 78px);
+    margin-left: 78px;
     margin-right: 57px;
     margin-top: 11px;
     margin-bottom: 11px;
