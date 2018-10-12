@@ -30,6 +30,11 @@
       display: none;
     }
   }
+
+  .header {
+    z-index: 20;
+    position: relative;
+  }
 }
 
 @media (min-width: 1250px) {
