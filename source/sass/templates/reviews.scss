@@ -110,6 +110,11 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/review@2x.jpg");
+      background-size: 350px auto;
+    }
   }
 
   .reviews__button {
