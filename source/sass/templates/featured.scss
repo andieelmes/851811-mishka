@@ -176,7 +176,6 @@
   .featured {
     padding: 111px 0 64px;
     position: relative;
-    margin: 0 100px;
 
     &::after {
       height: 23px;
@@ -190,15 +189,16 @@
 
   .featured__image {
     top: -53px;
+    right: 50px;
   }
 
   .featured__main {
     position: static;
-    padding-right: 62.1%;
+    padding-right: 66.6%;
   }
 
   .featured__block {
-    padding-left: 74px;
+    padding-left: 174px;
   }
 
   .featured__titles {

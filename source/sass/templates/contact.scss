@@ -123,14 +123,13 @@
 @media (min-width: 1150px) {
   .contact {
     position: relative;
-    padding: 142px 0 67px;
+    padding: 144px 0 67px;
     min-height: 500px;
-    margin: 0 100px;
   }
 
   .contact__map {
     position: absolute;
-    right: 0;
+    right: 50px;
     top: -70px;
     margin-left: auto;
     margin-right: auto;
@@ -139,13 +138,13 @@
 
   .contact .container {
     padding: 0;
-    padding-left: 174px;
+    padding-left: 224px;
     position: relative;
-    padding-right: 51%;
+    padding-right: 41%;
 
     &::before {
       top: -8px;
-      left: 63px;
+      left: 113px;
       right: auto;
     }
   }
