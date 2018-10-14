@@ -49,6 +49,9 @@
   display: flex;
   justify-content: center;
   position: relative;
+  margin-left: -29px;
+  margin-right: -29px;
+  width: calc(100% + 58px);
 }
 
 .contact__pin {
