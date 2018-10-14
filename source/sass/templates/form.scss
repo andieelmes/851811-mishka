@@ -50,6 +50,10 @@
 
   &.radio:first-child {
     padding-top: 34px;
+
+    .radio__name::before {
+      top: 30%;
+    }
   }
 
   &.checkbox {
@@ -159,7 +163,7 @@
 
     width: 24.7%;
     padding-right: 20px;
-    padding-top: 14px;
+    padding-top: 15px;
     flex-shrink: 0;
   }
 
@@ -178,6 +182,10 @@
 
     &.radio:first-child {
       padding-top: 0;
+
+      .radio__name::before {
+        top: 50%;
+      }
     }
 
     &.checkbox {
@@ -259,7 +267,7 @@
     padding: 0 112px;
 
     &.form__buttons {
-      padding: 0 222px;
+      padding: 0 225px;
     }
   }
 
@@ -288,7 +296,7 @@
     &--email,
     &--textarea {
       .container {
-        padding-right: 222px;
+        padding-right: 225px;
       }
     }
 

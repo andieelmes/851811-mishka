@@ -64,7 +64,7 @@
 
 .product__info {
   margin: 0;
-  padding: 21px 0;
+  padding: 21px 0 13px;
   display: flex;
   justify-content: space-between;
   flex-wrap: nowrap;
@@ -136,10 +136,14 @@
   }
 
   .product__info {
-    padding: 21px 6px;
+    padding: 22px 6px 15px;
     border-top: solid 1px #ececec;
     margin-bottom: 0;
     margin-top: auto;
+  }
+
+  .product__add {
+    margin-right: -1px;
   }
 }
 
