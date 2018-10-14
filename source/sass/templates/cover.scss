@@ -14,7 +14,7 @@
 
 .cover__top {
   padding: 71px 0 71px;
-  max-width: 1250px;
+  max-width: 1150px;
   margin: 0 auto;
   min-height: 283px;
 }
@@ -76,7 +76,7 @@
   }
 }
 
-@media (min-width: 1250px) {
+@media (min-width: 1150px) {
   .cover {
     &--bg {
       background-image: url("../img/hero-desktop@1x.jpg");
@@ -90,7 +90,7 @@
   .cover__links {
     display: flex;
     padding: 0 100px;
-    max-width: 1250px;
+    max-width: 1150px;
     margin: 0 auto;
   }
 
