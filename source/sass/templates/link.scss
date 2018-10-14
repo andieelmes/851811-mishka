@@ -12,45 +12,13 @@
   align-items: center;
   box-shadow: 0 -5px 0 0 transparent;
 
-  &:hover {
-    background-color: #46c1ae;
-    opacity: 1;
-    padding-bottom: 5px;
-    box-shadow: 0 -5px 0 0 #46c1ae;
-
-    .link__text {
-      padding-top: 22px;
-    }
-  }
-
+  &:hover,
   &:active {
-    background-color: #46c1ae;
-    color: $white_30;
     opacity: 1;
-    padding-bottom: 5px;
-    box-shadow: 0 -5px 0 0 #46c1ae;
-
-    .link__text {
-      padding-top: 22px;
-    }
-
-    img {
-      opacity: 0.3;
-    }
   }
 
   &--light {
     background-color: $primary_color;
-
-    &:hover {
-      background-color: #59d5bc;
-      box-shadow: 0 -5px 0 0 #59d5bc;
-    }
-
-    &:active {
-      background-color: #59d5bc;
-      box-shadow: 0 -5px 0 0 #59d5bc;
-    }
   }
 }
 
@@ -65,10 +33,42 @@
     line-height: 1.5;
     padding: 0 35px;
 
-    &:hover,
-    &:active {
+    &:hover {
+      background-color: #46c1ae;
+      opacity: 1;
+      padding-bottom: 5px;
+      box-shadow: 0 -5px 0 0 #46c1ae;
+
       .link__text {
         padding-top: 23px;
+      }
+    }
+
+    &:active {
+      background-color: #46c1ae;
+      color: $white_30;
+      opacity: 1;
+      padding-bottom: 5px;
+      box-shadow: 0 -5px 0 0 #46c1ae;
+
+      .link__text {
+        padding-top: 23px;
+      }
+
+      img {
+        opacity: 0.3;
+      }
+    }
+
+    &--light {
+      &:hover {
+        background-color: #59d5bc;
+        box-shadow: 0 -5px 0 0 #59d5bc;
+      }
+
+      &:active {
+        background-color: #59d5bc;
+        box-shadow: 0 -5px 0 0 #59d5bc;
       }
     }
   }
