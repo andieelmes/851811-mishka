@@ -1,5 +1,5 @@
 .product {
-  background-color: $white;
+  background-color: $primary-contrast;
   margin-bottom: 30px;
   max-width: 260px;
 
@@ -21,7 +21,7 @@
 }
 
 .product__container {
-  border: solid 1px $border_primary_color;
+  border: solid 1px $border-primary;
   padding: 7px 28px 6px;
 }
 
@@ -46,7 +46,7 @@
   font-size: 17px;
   font-weight: 700;
   line-height: 1.41;
-  color: $text_primary;
+  color: $text-primary;
   margin: 0;
   padding: 21px 0 11px;
 }
@@ -54,10 +54,10 @@
 .product__desc {
   font-size: 13px;
   line-height: 1.5;
-  color: $border_secondary_color;
+  color: $border-secondary;
   display: inline-block;
   vertical-align: top;
-  border-bottom: solid 1px $border_primary_color;
+  border-bottom: solid 1px $border-primary;
   width: 100%;
   padding-bottom: 24px;
 }
@@ -74,7 +74,7 @@
   font-size: 15px;
   font-weight: 700;
   line-height: 1.6;
-  color: $text_primary;
+  color: $text-primary;
 }
 
 .product__add {
@@ -85,7 +85,7 @@
 
   &:hover {
     path {
-      fill: $primary_color;
+      fill: $primary;
     }
   }
 
@@ -93,7 +93,7 @@
     opacity: 0.3;
 
     path {
-      fill: $primary_color;
+      fill: $primary;
     }
   }
 }

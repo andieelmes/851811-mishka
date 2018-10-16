@@ -5,7 +5,7 @@
 .form__text {
   font-size: 13px;
   line-height: 1.85;
-  color: $border_secondary_color;
+  color: $border-secondary;
   margin: 22px 0 25px;
 }
 
@@ -25,7 +25,7 @@
   font-size: 17px;
   font-weight: 700;
   line-height: 0.94;
-  color: $primary_color;
+  color: $primary;
   width: 100%;
   display: flex;
   text-transform: uppercase;
@@ -33,7 +33,7 @@
   &::after {
     flex-grow: 1;
     height: 1px;
-    background-color: $primary_color;
+    background-color: $primary;
     width: 100%;
     content: "";
     margin: 7px 0 0 25px;
@@ -100,7 +100,7 @@
 .form__notice {
   font-size: 14px;
   line-height: 1.14;
-  color: $border_secondary_color;
+  color: $border-secondary;
 }
 
 .form__button {

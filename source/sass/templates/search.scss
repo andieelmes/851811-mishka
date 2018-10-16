@@ -7,11 +7,11 @@
   font-size: 17px;
   font-weight: 700;
   line-height: 1.41;
-  color: $text_primary;
+  color: $text-primary;
   border: 0;
 
   &::placeholder {
-    color: $text_primary;
+    color: $text-primary;
   }
 }
 

@@ -20,7 +20,7 @@
   font-size: 25px;
   font-weight: 700;
   line-height: 1.2;
-  color: $text_primary;
+  color: $text-primary;
   margin: 0;
 }
 
@@ -34,14 +34,14 @@
   margin: 10px 0;
   font-size: 15px;
   line-height: 2;
-  color: $border_secondary_color;
+  color: $border-secondary;
 }
 
 .reviews__author {
   width: 100%;
   font-size: 17px;
   line-height: 1.41;
-  color: $text_primary;
+  color: $text-primary;
   font-weight: 700;
   font-style: normal;
   padding: 4px 0 30px;
@@ -60,8 +60,8 @@
 }
 
 .reviews__control {
-  background-color: $white;
-  border: solid 1px $border_primary_color;
+  background-color: $primary-contrast;
+  border: solid 1px $border-primary;
   height: 52px;
   width: 50%;
   background-repeat: no-repeat;

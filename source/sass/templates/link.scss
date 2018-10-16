@@ -18,7 +18,7 @@
   }
 
   &--light {
-    background-color: $primary_color;
+    background-color: $primary;
   }
 }
 
@@ -46,7 +46,7 @@
 
     &:active {
       background-color: #46c1ae;
-      color: $white_30;
+      color: $primary-contrast-30;
       opacity: 1;
       padding-bottom: 5px;
       box-shadow: 0 -5px 0 0 #46c1ae;
