@@ -3,13 +3,29 @@
   width: 100%;
   justify-content: center;
   align-items: center;
+
+  &:hover {
+    opacity: 1;
+
+    path {
+      fill: #46c1ae;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+
+    path {
+      fill: #46c1ae;
+    }
+  }
 }
 
 .copyright__text {
   font-size: 19px;
   font-weight: 700;
   line-height: 0.95;
-  color: $black;
+  color: $text-primary;
   padding-right: 22px;
   padding-left: 4px;
 }
@@ -18,7 +34,7 @@
   margin-top: 2px;
 }
 
-@media (min-width: 772px) {
+@media (min-width: $tablet) {
   .copyright {
     width: auto;
   }

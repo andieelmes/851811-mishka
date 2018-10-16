@@ -3,15 +3,15 @@
   width: 100%;
 }
 
-.search__input {
+.search__field {
   font-size: 17px;
   font-weight: 700;
   line-height: 1.41;
-  color: $black;
+  color: $text-primary;
   border: 0;
 
   &::placeholder {
-    color: $black;
+    color: $text-primary;
   }
 }
 
@@ -36,13 +36,13 @@
   }
 }
 
-@media (min-width: 772px) {
+@media (min-width: $tablet) {
   .search__label {
     padding: 24px 30px 25px 49px;
     height: 100%;
   }
 
-  .search__input {
+  .search__field {
     font-size: 0;
   }
 }

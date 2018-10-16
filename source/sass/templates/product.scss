@@ -1,5 +1,5 @@
 .product {
-  background-color: $white;
+  background-color: $primary-contrast;
   margin-bottom: 30px;
   max-width: 260px;
 
@@ -21,7 +21,7 @@
 }
 
 .product__container {
-  border: solid 1px $border_primary_color;
+  border: solid 1px $border-primary;
   padding: 7px 28px 6px;
 }
 
@@ -46,7 +46,7 @@
   font-size: 17px;
   font-weight: 700;
   line-height: 1.41;
-  color: $black;
+  color: $text-primary;
   margin: 0;
   padding: 21px 0 11px;
 }
@@ -54,17 +54,17 @@
 .product__desc {
   font-size: 13px;
   line-height: 1.5;
-  color: $border_secondary_color;
+  color: $text-secondary;
   display: inline-block;
   vertical-align: top;
-  border-bottom: solid 1px $border_primary_color;
+  border-bottom: solid 1px $border-primary;
   width: 100%;
   padding-bottom: 24px;
 }
 
 .product__info {
   margin: 0;
-  padding: 21px 0;
+  padding: 21px 0 13px;
   display: flex;
   justify-content: space-between;
   flex-wrap: nowrap;
@@ -74,7 +74,7 @@
   font-size: 15px;
   font-weight: 700;
   line-height: 1.6;
-  color: $black;
+  color: $text-primary;
 }
 
 .product__add {
@@ -82,9 +82,23 @@
   margin-top: 1px;
   display: block;
   margin-right: -3px;
+
+  &:hover {
+    path {
+      fill: $primary;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+
+    path {
+      fill: $primary;
+    }
+  }
 }
 
-@media (min-width: 772px) {
+@media (min-width: $tablet) {
   .product {
     width: 100%;
     position: relative;
@@ -122,14 +136,18 @@
   }
 
   .product__info {
-    padding: 21px 6px;
+    padding: 22px 6px 15px;
     border-top: solid 1px #ececec;
     margin-bottom: 0;
     margin-top: auto;
   }
+
+  .product__add {
+    margin-right: -1px;
+  }
 }
 
-@media (min-width: 1250px) {
+@media (min-width: $desktop) {
   .product {
     width: 30%;
     min-height: 100%;
@@ -145,7 +163,7 @@
   }
 
   .product__container {
-    padding: 4px 25px 17px;
+    padding: 4px 25px 9px;
     justify-content: space-between;
     width: 100%;
     flex-grow: 1;

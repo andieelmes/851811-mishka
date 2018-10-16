@@ -16,7 +16,7 @@
   padding: 14px 0 18px;
 }
 
-@media (min-width: 772px) {
+@media (min-width: $tablet) {
   .footer {
     padding: 52px 0;
     overflow: hidden;
@@ -30,6 +30,22 @@
   .footer__logo {
     display: inline-block;
     flex-shrink: 0;
+
+    &[href] {
+      &:hover {
+        path {
+          fill: #46c1ae;
+        }
+      }
+
+      &:active {
+        opacity: 0.3;
+
+        path {
+          fill: #46c1ae;
+        }
+      }
+    }
   }
 
   .footer__socials {

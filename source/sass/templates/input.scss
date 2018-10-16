@@ -17,7 +17,7 @@
     }
 
     .input__field {
-      padding-right: 50px;
+      padding-right: 70px;
     }
   }
 
@@ -39,7 +39,7 @@
     }
 
     .input__field {
-      padding-right: 50px;
+      padding-right: 70px;
     }
   }
 }
@@ -48,7 +48,7 @@
   font-size: 17px;
   font-weight: 700;
   line-height: 1.06;
-  color: $black;
+  color: $text-primary;
   display: block;
 }
 
@@ -75,7 +75,7 @@
   }
 }
 
-@media (min-width: 772px) {
+@media (min-width: $tablet) {
   .input {
     display: flex;
   }
@@ -102,7 +102,7 @@
   }
 }
 
-@media (min-width: 1250px) {
+@media (min-width: $desktop) {
   .input--tel,
   .input--email {
     &::after {

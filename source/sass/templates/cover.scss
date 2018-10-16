@@ -4,41 +4,22 @@
     background-image: url("../img/hero-mobile@1x.jpg");
     background-repeat: no-repeat;
     background-position: center bottom 134px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/hero-mobile@2x.jpg");
+      background-size: 575px auto;
+    }
   }
 }
 
 .cover__top {
-  padding: 71px 0 122px;
-  max-width: 1250px;
+  padding: 71px 0 71px;
+  max-width: 1150px;
   margin: 0 auto;
+  min-height: 283px;
 }
 
-.cover__nav {
-  list-style: none;
-  margin: 0;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  display: none;
-  padding: 18px 0;
-}
-
-.cover__item {
-  font-size: 15px;
-  font-weight: 700;
-  line-height: 1.6;
-  color: $black;
-  padding-right: 35px;
-}
-
-.cover__caption {
-  font-size: 15px;
-  line-height: 1.6;
-  color: #444444;
-  flex-grow: 1;
-  text-align: right;
-}
-
-@media (min-width: 772px) {
+@media (min-width: $tablet) {
   .cover {
     position: relative;
     padding-bottom: 13px;
@@ -49,6 +30,11 @@
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/hero-tablet@2x.jpg");
+        background-size: cover;
+      }
     }
 
     &::after {
@@ -68,7 +54,8 @@
 
   .cover__top {
     background: none;
-    padding: 94px 0 375px;
+    padding: 154px 0 150px;
+    min-height: 627px;
   }
 
   .cover__links {
@@ -85,36 +72,35 @@
   }
 
   .cover__item {
-    &--specials {
-      display: none;
-    }
+    display: none;
   }
 }
 
-@media (min-width: 1250px) {
+@media (min-width: $desktop) {
   .cover {
     &--bg {
       background-image: url("../img/hero-desktop@1x.jpg");
+    }
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/hero-desktop@2x.jpg");
     }
   }
 
   .cover__links {
     display: flex;
-    padding: 0 100px;
-    max-width: 1250px;
+    padding: 0 50px;
+    max-width: 1150px;
     margin: 0 auto;
   }
 
   .cover__item {
-    display: none;
+    display: block;
     padding-right: 62px;
-
-    &--specials {
-      display: block;
-    }
   }
 
   .cover__top {
-    padding: 94px 0 359px;
+    padding: 154px 0 150px;
+    min-height: 627px;
   }
 }

@@ -5,7 +5,7 @@
 .form__text {
   font-size: 13px;
   line-height: 1.85;
-  color: $border_secondary_color;
+  color: $text-secondary;
   margin: 22px 0 25px;
 }
 
@@ -25,7 +25,7 @@
   font-size: 17px;
   font-weight: 700;
   line-height: 0.94;
-  color: $primary_color;
+  color: $primary;
   width: 100%;
   display: flex;
   text-transform: uppercase;
@@ -33,7 +33,7 @@
   &::after {
     flex-grow: 1;
     height: 1px;
-    background-color: $primary_color;
+    background-color: $primary;
     width: 100%;
     content: "";
     margin: 7px 0 0 25px;
@@ -50,6 +50,10 @@
 
   &.radio:first-child {
     padding-top: 34px;
+
+    .radio__name::before {
+      top: 30%;
+    }
   }
 
   &.checkbox {
@@ -96,7 +100,7 @@
 .form__notice {
   font-size: 14px;
   line-height: 1.14;
-  color: $border_secondary_color;
+  color: $text-secondary;
 }
 
 .form__button {
@@ -105,7 +109,7 @@
   cursor: pointer;
 }
 
-@media (min-width: 772px) {
+@media (min-width: $tablet) {
   .form {
     padding-top: 38px;
     padding-bottom: 48px;
@@ -159,7 +163,7 @@
 
     width: 24.7%;
     padding-right: 20px;
-    padding-top: 14px;
+    padding-top: 15px;
     flex-shrink: 0;
   }
 
@@ -178,6 +182,10 @@
 
     &.radio:first-child {
       padding-top: 0;
+
+      .radio__name::before {
+        top: 50%;
+      }
     }
 
     &.checkbox {
@@ -246,7 +254,7 @@
 }
 
 
-@media (min-width: 1250px) {
+@media (min-width: $desktop) {
   .form {
     padding-top: 88px;
   }
@@ -256,10 +264,10 @@
   }
 
   .form .container {
-    padding: 0 162px;
+    padding: 0 112px;
 
     &.form__buttons {
-      padding: 0 272px;
+      padding: 0 225px;
     }
   }
 
@@ -288,7 +296,7 @@
     &--email,
     &--textarea {
       .container {
-        padding-right: 272px;
+        padding-right: 225px;
       }
     }
 

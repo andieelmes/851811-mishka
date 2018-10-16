@@ -15,27 +15,42 @@
   }
 }
 
-@media (min-width: 772px) {
+@media (min-width: $tablet) {
   .page-title {
     font-size: 43px;
     line-height: 1.16;
     padding: 0 52px;
     max-width: 100%;
+    position: relative;
 
     &--bg {
-      padding: 36px 52px 81px;
+      padding: 96px 52px 94px;
+
+      &::after {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 24px;
+        background-image: url("../img/bg-zigzag-fill.svg");
+        background-repeat: repeat-x;
+        background-size: auto 24px;
+        content: "";
+        background-position: center;
+      }
     }
   }
 }
 
-@media (min-width: 1250px) {
+@media (min-width: $desktop) {
   .page-title {
     font-size: 53px;
     line-height: 1.08;
     padding: 0 100px;
 
     &--bg {
-      padding: 36px 52px 100px;
+      padding: 96px 52px 113px;
     }
   }
 }

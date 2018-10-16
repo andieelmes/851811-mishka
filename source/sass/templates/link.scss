@@ -10,30 +10,15 @@
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
-  transition: all 0.2s;
+  box-shadow: 0 -5px 0 0 transparent;
 
-  &:hover {
-    background-color: #46c1ae;
-    opacity: 1;
-    //padding-bottom: 34px;
-  }
-
+  &:hover,
   &:active {
-    background-color: #46c1ae;
-    color: $white_30;
     opacity: 1;
   }
 
   &--light {
-    background-color: $primary_color;
-
-    &:hover {
-      background-color: #59d5bc;
-    }
-
-    &:active {
-      background-color: #59d5bc;
-    }
+    background-color: $primary;
   }
 }
 
@@ -42,11 +27,50 @@
   max-width: 66%;
 }
 
-@media (min-width: 772px) {
+@media (min-width: $tablet) {
   .link {
     font-size: 20px;
     line-height: 1.5;
     padding: 0 35px;
+
+    &:hover {
+      background-color: #46c1ae;
+      opacity: 1;
+      padding-bottom: 5px;
+      box-shadow: 0 -5px 0 0 #46c1ae;
+
+      .link__text {
+        padding-top: 23px;
+      }
+    }
+
+    &:active {
+      background-color: #46c1ae;
+      color: $primary-contrast-30;
+      opacity: 1;
+      padding-bottom: 5px;
+      box-shadow: 0 -5px 0 0 #46c1ae;
+
+      .link__text {
+        padding-top: 23px;
+      }
+
+      img {
+        opacity: 0.3;
+      }
+    }
+
+    &--light {
+      &:hover {
+        background-color: #59d5bc;
+        box-shadow: 0 -5px 0 0 #59d5bc;
+      }
+
+      &:active {
+        background-color: #59d5bc;
+        box-shadow: 0 -5px 0 0 #59d5bc;
+      }
+    }
   }
 
   .link__text {
@@ -54,7 +78,7 @@
   }
 }
 
-@media (min-width: 1250px) {
+@media (min-width: $desktop) {
   .link__text {
     max-width: 39%;
   }

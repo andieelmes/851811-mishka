@@ -10,7 +10,7 @@
 
   &:active {
     .checkbox__name::before {
-      border-color: rgba($border_secondary_color, 0.3);
+      border-color: rgba($border-secondary, 0.3);
     }
   }
 }
@@ -19,7 +19,7 @@
   font-size: 17px;
   font-weight: 700;
   line-height: 1.06;
-  color: $black;
+  color: $text-primary;
   position: relative;
   padding-left: 64px;
   display: inline-block;
@@ -28,7 +28,7 @@
   &::before {
     position: absolute;
     background-color: white;
-    border: solid 2px $border_secondary_color;
+    border: solid 2px $border-secondary;
     width: 40px;
     height: 40px;
     content: "";
@@ -41,11 +41,11 @@
   }
 }
 
-.checkbox__input:checked ~ .checkbox__name::before {
+.checkbox__field:checked ~ .checkbox__name::before {
   background-image: url("../img/icon-tick.svg");
 }
 
-@media (min-width: 772px) {
+@media (min-width: $tablet) {
   .checkbox__name {
     font-size: 19px;
     line-height: 0.95;
@@ -61,7 +61,7 @@
     }
   }
 
-  .checkbox__input:checked ~ .checkbox__name::before {
+  .checkbox__field:checked ~ .checkbox__name::before {
     background-size: 33px 22px;
   }
 }
