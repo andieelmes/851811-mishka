@@ -109,7 +109,7 @@
   cursor: pointer;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet) {
   .form {
     padding-top: 38px;
     padding-bottom: 48px;
@@ -254,7 +254,7 @@
 }
 
 
-@media (min-width: 1150px) {
+@media (min-width: $desktop) {
   .form {
     padding-top: 88px;
   }

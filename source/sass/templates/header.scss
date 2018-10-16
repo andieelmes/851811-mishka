@@ -17,7 +17,7 @@
   text-align: center;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet) {
   .header__logo {
     padding: 22px 0 20px;
   }
@@ -37,7 +37,7 @@
   }
 }
 
-@media (min-width: 1150px) {
+@media (min-width: $desktop) {
   .header__item {
     &--logo {
       order: 3;

@@ -49,7 +49,7 @@
   box-shadow: inset 0 0 0 12px white;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet) {
   .radio__name {
     font-size: 19px;
     line-height: 0.95;

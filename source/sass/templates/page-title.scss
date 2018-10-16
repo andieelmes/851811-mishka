@@ -15,7 +15,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet) {
   .page-title {
     font-size: 43px;
     line-height: 1.16;
@@ -43,7 +43,7 @@
   }
 }
 
-@media (min-width: 1150px) {
+@media (min-width: $desktop) {
   .page-title {
     font-size: 53px;
     line-height: 1.08;

@@ -98,7 +98,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet) {
   .product {
     width: 100%;
     position: relative;
@@ -147,7 +147,7 @@
   }
 }
 
-@media (min-width: 1150px) {
+@media (min-width: $desktop) {
   .product {
     width: 30%;
     min-height: 100%;

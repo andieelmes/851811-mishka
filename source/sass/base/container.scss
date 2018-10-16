@@ -5,13 +5,13 @@
   margin-right: auto;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet) {
   .container {
     padding: 0 52px;
   }
 }
 
-@media (min-width: 1150px) {
+@media (min-width: $desktop) {
   .container {
     max-width: 1150px;
     padding: 0 50px;

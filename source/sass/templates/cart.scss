@@ -38,7 +38,7 @@
 }
 
 
-@media (min-width: 768px) {
+@media (min-width: $tablet) {
   .cart {
     max-width: 566px;
     padding: 24px 0 46px;

@@ -62,7 +62,7 @@
 }
 
 
-@media (min-width: 768px) {
+@media (min-width: $tablet) {
   .contact {
     padding: 62px 0 19px;
     position: relative;
@@ -120,7 +120,7 @@
   }
 }
 
-@media (min-width: 1150px) {
+@media (min-width: $desktop) {
   .contact {
     position: relative;
     padding: 144px 0 67px;

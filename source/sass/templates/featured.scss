@@ -87,7 +87,7 @@
   margin: 27px 0;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet) {
   .featured {
     padding: 33px 0 35px;
     min-height: 592px;
@@ -172,7 +172,7 @@
   }
 }
 
-@media (min-width: 1150px) {
+@media (min-width: $desktop) {
   .featured {
     padding: 111px 0 64px;
     position: relative;

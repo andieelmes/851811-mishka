@@ -27,7 +27,7 @@
   max-width: 66%;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet) {
   .link {
     font-size: 20px;
     line-height: 1.5;
@@ -78,7 +78,7 @@
   }
 }
 
-@media (min-width: 1150px) {
+@media (min-width: $desktop) {
   .link__text {
     max-width: 39%;
   }

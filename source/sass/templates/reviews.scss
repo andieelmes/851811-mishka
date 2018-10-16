@@ -90,7 +90,7 @@
   margin: 38px 0 29px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet) {
   .reviews {
     padding: 0;
 
@@ -156,7 +156,7 @@
   }
 }
 
-@media (min-width: 1150px) {
+@media (min-width: $desktop) {
   .reviews {
     &::after {
       height: 23px;

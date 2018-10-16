@@ -45,7 +45,7 @@
   background-image: url("../img/icon-tick.svg");
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet) {
   .checkbox__name {
     font-size: 19px;
     line-height: 0.95;
