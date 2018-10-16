@@ -7,7 +7,7 @@
   font-weight: 700;
   line-height: 1.18;
   text-align: center;
-  color: $border-secondary;
+  color: $text-secondary;
   padding: 14px 20px;
   min-height: 52px;
   background-color: white;
@@ -21,13 +21,13 @@
   }
 
   &:hover {
-    background-color: $border-secondary;
+    background-color: #444444;
     color: $primary-contrast;
     opacity: 1;
   }
 
   &:active {
-    background-color: $border-secondary;
+    background-color: #444444;
     color: $primary-contrast-30;
     opacity: 1;
   }
