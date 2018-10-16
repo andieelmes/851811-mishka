@@ -26,7 +26,7 @@
   }
 }
 
-.size__input:checked ~ .size__name {
+.size__field:checked ~ .size__name {
   border-color: $primary_color;
 }
 

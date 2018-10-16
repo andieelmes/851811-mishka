@@ -41,7 +41,7 @@
   }
 }
 
-.checkbox__input:checked ~ .checkbox__name::before {
+.checkbox__field:checked ~ .checkbox__name::before {
   background-image: url("../img/icon-tick.svg");
 }
 
@@ -61,7 +61,7 @@
     }
   }
 
-  .checkbox__input:checked ~ .checkbox__name::before {
+  .checkbox__field:checked ~ .checkbox__name::before {
     background-size: 33px 22px;
   }
 }
