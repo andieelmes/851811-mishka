@@ -18,6 +18,11 @@
     border-color: $primary;
     background-color: $primary;
     color: white;
+
+    &:hover,
+    &:active {
+      border-color: #444444;
+    }
   }
 
   &:hover {

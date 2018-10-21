@@ -53,32 +53,57 @@
     box-shadow: 0 1px 0 0 $box-shadow-primary, inset 0 1px 0 0 $box-shadow-primary;
   }
 
+  .nav__item,
+  .nav__outer {
+    display: none;
+  }
+
+  .nav__wrapper {
+    width: auto;
+  }
+
+  .nav__toggle {
+    background-image: url("../img/icon-menu-open.svg");
+    background-size: 20px 14px;
+  }
+
   .nav {
-    &.is-hidden {
+    &.active {
+      padding-top: 79px;
+
       .nav__item,
       .nav__outer {
-        display: none;
+        display: block;
       }
 
       .nav__wrapper {
-        width: auto;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
       }
 
       .nav__toggle {
-        background-image: url("../img/icon-menu-open.svg");
+        background-image: url("../img/icon-menu-close.svg");
         background-size: 20px 14px;
       }
     }
   }
 
-  .js .nav:not(.is-hidden) {
-    padding-top: 79px;
+  .no-js.nav {
+    .nav__item,
+    .nav__outer {
+      display: block;
+    }
 
     .nav__wrapper {
-      position: absolute;
-      left: 0;
-      top: 0;
-      right: 0;
+      width: 100%;
+    }
+
+    .nav__toggle {
+      background-image: url("../img/icon-menu-close.svg");
+      background-size: 20px 14px;
     }
   }
 

@@ -1,5 +1,7 @@
 .header {
   background-color: white;
+  z-index: 100;
+  position: relative;
 }
 
 .header__nav {

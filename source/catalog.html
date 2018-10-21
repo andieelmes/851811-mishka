@@ -13,7 +13,7 @@
   <!-- <img src="preview/mishka-catalog-tablet.jpg" style="position:absolute; left:50%;top: 0;margin-left:-386px;opacity:0.5;z-index:999"> -->
   <!-- <img src="preview/mishka-catalog-desktop.jpg" style="position:absolute; left:50%;top: 0;margin-left:-575px;opacity:0.5;z-index:999"> -->
   <header class="header">
-    <nav class="header__nav nav is-hidden">
+    <nav class="header__nav nav js-nav-container no-js">
       <ul class="nav__wrapper">
         <li class="header__item header__item--logo">
           <a href="index.html" class="header__logo logo">
@@ -25,7 +25,7 @@
           </a>
         </li>
         <li class="header__item header__item--toggle">
-          <button class="nav__toggle" type="button" aria-label="Открыть меню"></button>
+          <button class="nav__toggle js-nav-btn" type="button" aria-label="Открыть меню"></button>
         </li>
         <li class="nav__outer">
           <a href="catalog.html" class="nav__link">Каталог товаров</a>
@@ -72,7 +72,7 @@
             <span class="product__desc">Рост 30 см, вес 200 г</span>
             <p class="product__info">
               <span class="product__price">1 200 руб.</span>
-              <a href="#" class="product__add" aria-label="Добавить в корзину">
+              <a href="#" class="product__add js-cart-btn" aria-label="Добавить в корзину">
                 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20.294px" height="18.849px" viewBox="264.205 370.961 20.294 18.849" enable-background="new 264.205 370.961 20.294 18.849" xml:space="preserve">
                   <path fill="#231F20" d="M283.75,378.19h-3.151l-3.407-6.814c-0.185-0.37-0.634-0.52-1.006-0.335 c-0.371,0.186-0.521,0.636-0.335,1.006l3.071,6.143h-9.138l3.072-6.143c0.185-0.371,0.035-0.821-0.335-1.006 c-0.37-0.185-0.821-0.035-1.006,0.335l-3.407,6.814h-3.151c-0.414,0-0.75,0.336-0.75,0.75s0.336,0.75,0.75,0.75h0.157l0.855,2.991 c-0.187,0.137-0.316,0.347-0.316,0.595c0,0.396,0.309,0.71,0.697,0.739l1.656,5.795h12.697l1.656-5.795 c0.388-0.028,0.698-0.344,0.698-0.739c0-0.249-0.129-0.459-0.316-0.596l0.854-2.991h0.157c0.414,0,0.75-0.336,0.75-0.75 S284.164,378.19,283.75,378.19z M279.569,388.311h-10.433l-1.224-4.284h12.881L279.569,388.311z M281.222,382.526h-13.739 l-0.81-2.836h15.359L281.222,382.526z"/>
                 </svg>
@@ -97,7 +97,7 @@
             <span class="product__desc">Диаметр 15 см, высота 10 см</span>
             <p class="product__info">
               <span class="product__price">690 руб.</span>
-              <a href="#" class="product__add" aria-label="Добавить в корзину">
+              <a href="#" class="product__add js-cart-btn" aria-label="Добавить в корзину">
                 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20.294px" height="18.849px" viewBox="264.205 370.961 20.294 18.849" enable-background="new 264.205 370.961 20.294 18.849" xml:space="preserve">
                   <path fill="#231F20" d="M283.75,378.19h-3.151l-3.407-6.814c-0.185-0.37-0.634-0.52-1.006-0.335 c-0.371,0.186-0.521,0.636-0.335,1.006l3.071,6.143h-9.138l3.072-6.143c0.185-0.371,0.035-0.821-0.335-1.006 c-0.37-0.185-0.821-0.035-1.006,0.335l-3.407,6.814h-3.151c-0.414,0-0.75,0.336-0.75,0.75s0.336,0.75,0.75,0.75h0.157l0.855,2.991 c-0.187,0.137-0.316,0.347-0.316,0.595c0,0.396,0.309,0.71,0.697,0.739l1.656,5.795h12.697l1.656-5.795 c0.388-0.028,0.698-0.344,0.698-0.739c0-0.249-0.129-0.459-0.316-0.596l0.854-2.991h0.157c0.414,0,0.75-0.336,0.75-0.75 S284.164,378.19,283.75,378.19z M279.569,388.311h-10.433l-1.224-4.284h12.881L279.569,388.311z M281.222,382.526h-13.739 l-0.81-2.836h15.359L281.222,382.526z"/>
                 </svg>
@@ -122,7 +122,7 @@
             <span class="product__desc">Диаметр 30 см, высота 30 см</span>
             <p class="product__info">
               <span class="product__price">1 500 руб.</span>
-              <a href="#" class="product__add" aria-label="Добавить в корзину">
+              <a href="#" class="product__add js-cart-btn" aria-label="Добавить в корзину">
                 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20.294px" height="18.849px" viewBox="264.205 370.961 20.294 18.849" enable-background="new 264.205 370.961 20.294 18.849" xml:space="preserve">
                   <path fill="#231F20" d="M283.75,378.19h-3.151l-3.407-6.814c-0.185-0.37-0.634-0.52-1.006-0.335 c-0.371,0.186-0.521,0.636-0.335,1.006l3.071,6.143h-9.138l3.072-6.143c0.185-0.371,0.035-0.821-0.335-1.006 c-0.37-0.185-0.821-0.035-1.006,0.335l-3.407,6.814h-3.151c-0.414,0-0.75,0.336-0.75,0.75s0.336,0.75,0.75,0.75h0.157l0.855,2.991 c-0.187,0.137-0.316,0.347-0.316,0.595c0,0.396,0.309,0.71,0.697,0.739l1.656,5.795h12.697l1.656-5.795 c0.388-0.028,0.698-0.344,0.698-0.739c0-0.249-0.129-0.459-0.316-0.596l0.854-2.991h0.157c0.414,0,0.75-0.336,0.75-0.75 S284.164,378.19,283.75,378.19z M279.569,388.311h-10.433l-1.224-4.284h12.881L279.569,388.311z M281.222,382.526h-13.739 l-0.81-2.836h15.359L281.222,382.526z"/>
                 </svg>
@@ -175,7 +175,7 @@
       </a>
     </div>
   </footer>
-  <section class="modal">
+  <section class="modal js-cart-container">
     <form class="modal__cart cart" name="cart" method="POST" action="https://echo.htmlacademy.ru">
       <div class="container">
         <h2 class="cart__title">Добавить в корзину</h2>
@@ -197,6 +197,7 @@
       </div>
     </form>
   </section>
+  <script src="js/scripts.js"></script>
 </body>
 
 </html>
