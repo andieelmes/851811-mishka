@@ -73,6 +73,10 @@
   &:active {
     box-shadow: inset 0 -2px 0 0 #62d1ba;
   }
+
+  &:required.error {
+    box-shadow: inset 0 -2px 0 0 red;
+  }
 }
 
 @media (min-width: $tablet) {
