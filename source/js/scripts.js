@@ -8,15 +8,14 @@ function openPopup(openBtn, modal, inner, className) {
       e.preventDefault()
       popup.classList.add(className)
     })
-
-    body.addEventListener('click', function(e){
-      if (!e.target.closest(inner)
-          && !e.target.closest(openBtn)) {
-        e.preventDefault();
-        popup.classList.remove(className)
-      }
-    })
   });
+
+  popup.addEventListener('click', function(e){
+    if (!e.target.closest(inner)) {
+      e.preventDefault();
+      popup.classList.remove(className)
+    }
+  })
 
   var keyCodeEsc = 27;
   window.addEventListener('keydown', function (e) {
