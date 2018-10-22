@@ -78,16 +78,17 @@
 }
 
 .product__add {
-  opacity: 0.2;
   margin-top: 1px;
   display: block;
   margin-right: -3px;
 
   svg {
-    fill: rgba(black, 0.2);
+    fill: rgba(#231f20, 0.2);
   }
 
   &:hover {
+    opacity: 1;
+
     svg {
       fill: $primary;
     }
@@ -95,7 +96,7 @@
 
   &:active {
     svg {
-      fill: $primary-30;
+      fill: $primary;
     }
   }
 }
