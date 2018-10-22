@@ -2,31 +2,31 @@ import picturefill from 'picturefill';
 
 import closest from 'element-closest';
 
-function openPopup(openBtn, modal, inner, className) {
-  var btn = document.querySelectorAll(openBtn);
-  var popup = document.querySelector(modal);
-  var body = document.querySelector('body');
+const openPopup = (openBtn, modal, inner, className) => {
+  const btn = document.querySelectorAll(openBtn);
+  const popup = document.querySelector(modal);
+  const body = document.querySelector('body');
 
   if (!btn.length) return
 
-  function open(e) {
+  const open = (e) => {
     e.preventDefault();
     popup.classList.add(className);
   };
 
-  function close(e) {
+  const close = (e) => {
     e.preventDefault();
     popup.classList.remove(className);
   };
 
-  function closeByOutsideClick(e) {
+  const closeByOutsideClick = (e) => {
     if (!e.target.closest(inner)) {
       close(e)
     }
   };
 
-  function closeByEsc(e) {
-    var keyCodeEsc = 27;
+  const closeByEsc = (e) => {
+    const keyCodeEsc = 27;
 
     if (e.keyCode === keyCodeEsc) {
       close(e)
@@ -46,12 +46,12 @@ function openPopup(openBtn, modal, inner, className) {
 openPopup('.js-cart-btn', '.js-cart-container', '.js-inner', 'active');
 
 
-function toggleMenu() {
-  var container = document.querySelector('.js-nav-container');
-  var btn = document.querySelector('.js-nav-btn');
+const toggleMenu = () => {
+  const container = document.querySelector('.js-nav-container');
+  const btn = document.querySelector('.js-nav-btn');
 
-  var toOpen = 'Открыть меню';
-  var toClose = 'Закрыть меню';
+  const toOpen = 'Открыть меню';
+  const toClose = 'Закрыть меню';
 
   container.classList.remove('no-js');
 
