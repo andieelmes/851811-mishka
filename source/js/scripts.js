@@ -1,11 +1,20 @@
-function openPopup(openBtn, modal, className) {
+function openPopup(openBtn, modal, inner, className) {
   var btn = document.querySelectorAll(openBtn)
   var popup = document.querySelector(modal)
+  var body = document.querySelector('body')
 
   btn.forEach(function(element) {
     element.addEventListener('click', function (e) {
       e.preventDefault()
       popup.classList.add(className)
+    })
+
+    body.addEventListener('click', function(e){
+      if (!e.target.closest(inner)
+          && !e.target.closest(openBtn)) {
+        e.preventDefault();
+        popup.classList.remove(className)
+      }
     })
   });
 
@@ -16,9 +25,10 @@ function openPopup(openBtn, modal, className) {
       popup.classList.remove(className)
     }
   });
+
 }
 
-openPopup('.js-cart-btn', '.js-cart-container', 'active')
+openPopup('.js-cart-btn', '.js-cart-container', '.js-inner', 'active')
 
 
 function toggleMenu() {
