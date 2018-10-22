@@ -1,3 +1,7 @@
+import picturefill from 'picturefill';
+
+import closest from 'element-closest';
+
 function openPopup(openBtn, modal, inner, className) {
   var btn = document.querySelectorAll(openBtn);
   var popup = document.querySelector(modal);
