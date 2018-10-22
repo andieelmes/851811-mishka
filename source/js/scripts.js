@@ -3,6 +3,8 @@ function openPopup(openBtn, modal, inner, className) {
   var popup = document.querySelector(modal)
   var body = document.querySelector('body')
 
+  if (!btn.length) return
+
   btn.forEach(function(element) {
     element.addEventListener('click', function (e) {
       e.preventDefault()

@@ -2,18 +2,9 @@
   &--tel {
     position: relative;
 
-    &::after {
-      position: absolute;
+    .input__icon {
       right: 9px;
       top: 41%;
-      transform: translateY(-50%);
-      background-repeat: no-repeat;
-      background-size: cover;
-      content: "";
-      background-image: url("../img/icon-phone.svg");
-      width: 25px;
-      height: 24px;
-      opacity: 0.2;
     }
 
     .input__field {
@@ -24,24 +15,21 @@
   &--email {
     position: relative;
 
-    &::after {
-      position: absolute;
+    .input__icon {
       right: 5px;
       top: 47%;
-      transform: translateY(-50%);
-      background-repeat: no-repeat;
-      background-size: cover;
-      content: "";
-      background-image: url("../img/icon-mail.svg");
-      width: 32px;
-      height: 32px;
-      opacity: 0.2;
     }
 
     .input__field {
       padding-right: 70px;
     }
   }
+}
+
+.input__icon {
+  position: absolute;
+  fill: rgba(#000000, 0.2);
+  transform: translateY(-50%);
 }
 
 .input__name {
@@ -72,6 +60,10 @@
   &:hover,
   &:active {
     box-shadow: inset 0 -2px 0 0 #62d1ba;
+
+    ~ .input__icon {
+      fill: $primary;
+    }
   }
 
   &:required.error {

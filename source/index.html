@@ -14,9 +14,6 @@
   <!-- <img src="preview/mishka-index-tablet-modal.jpg" style="position:absolute; left:50%;top: 0;margin-left:-386px;opacity:0.5;z-index:999"> -->
   <!-- <img src="preview/mishka-index-desktop.jpg" style="position:absolute; left:50%;top: 0;margin-left:-625px;opacity:0.5;z-index:999"> -->
   <!-- <img src="preview/mishka-index-desktop-modal.jpg" style="position:absolute; left:50%;top: 0;margin-left:-625px;opacity:0.5;z-index:999"> -->
-  <div style="display:none;">
-    <include src="build/img/sprite.svg"></include>
-  </div>
   <header class="header">
     <nav class="header__nav nav js-nav-container no-js">
       <ul class="nav__wrapper">
@@ -39,13 +36,21 @@
         <li class="nav__item nav__item--search">
           <form class="nav__search search" name="search" method="POST" action="https://echo.htmlacademy.ru">
             <label class="search__label">
+              <svg width="17.6" height="17.6" class="search__icon">
+                <use xlink:href="img/sprite.svg#icon-search"></use>
+              </svg>
               <input type="text" name="search" class="search__field" id="search" required placeholder="Поиск по сайту">
             </label>
             <button type="submit" class="search__button visually-hidden" aria-label="Найти"></button>
           </form>
         </li>
         <li class="nav__item nav__item--cart">
-          <a href="#" class="nav__link nav__link--cart">Корзина: пока пуста</a>
+          <a href="#" class="nav__link nav__link--cart">
+            <svg width="20.294" height="18.849" class="nav__icon">
+              <use xlink:href="img/sprite.svg#icon-cart"></use>
+            </svg>
+            <span>Корзина: пока пуста</span>
+          </a>
         </li>
         <li class="nav__additional">
           <a href="#" class="nav__link">Новые поступления</a>
@@ -221,9 +226,21 @@
       </a>
       <section class="footer__socials socials">
         <h2 class="visually-hidden">Найдите нас на</h2>
-        <a href="#" class="socials__item socials__item--insta" aria-label="Instagram"></a>
-        <a href="#" class="socials__item socials__item--fb" aria-label="Facebook"></a>
-        <a href="#" class="socials__item socials__item--tw" aria-label="Twitter"></a>
+        <a href="#" class="socials__item socials__item--insta" aria-label="Instagram">
+          <svg width="21.769" height="21.334" class="socials__icon">
+            <use xlink:href="img/sprite.svg#icon-insta"></use>
+          </svg>
+        </a>
+        <a href="#" class="socials__item socials__item--fb" aria-label="Facebook">
+          <svg width="14.962" height="27.718" class="socials__icon">
+            <use xlink:href="img/sprite.svg#icon-fb"></use>
+          </svg>
+        </a>
+        <a href="#" class="socials__item socials__item--tw" aria-label="Twitter">
+          <svg width="23.494" height="20.168" class="socials__icon">
+            <use xlink:href="img/sprite.svg#icon-twitter"></use>
+          </svg>
+        </a>
       </section>
       <a href="https://htmlacademy.ru/intensive/adaptive" class="footer__copyright copyright">
         <span class="copyright__text">Разработано</span>

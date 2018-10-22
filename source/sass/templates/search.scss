@@ -20,20 +20,26 @@
   display: block;
   padding: 24px 30px 25px 74px;
   position: relative;
+  cursor: pointer;
 
-  &::before {
-    position: absolute;
-    left: 33px;
-    top: 52%;
-    transform: translateY(-50%);
-    width: 18px;
-    height: 18px;
-    opacity: 0.2;
-    background-image: url("../img/icon-search.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    content: "";
+  &:hover .search__icon {
+    fill: $primary;
   }
+
+  &:active .search__icon {
+    fill: $primary-30;
+  }
+}
+
+.search__icon {
+  position: absolute;
+  left: 33px;
+  top: 52%;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  content: "";
+  fill: rgba(#231f20, 0.2);
 }
 
 @media (min-width: $tablet) {
@@ -43,6 +49,6 @@
   }
 
   .search__field {
-    font-size: 0;
+    display: none;
   }
 }

@@ -83,17 +83,19 @@
   display: block;
   margin-right: -3px;
 
+  svg {
+    fill: rgba(black, 0.2);
+  }
+
   &:hover {
-    path {
+    svg {
       fill: $primary;
     }
   }
 
   &:active {
-    opacity: 0.3;
-
-    path {
-      fill: $primary;
+    svg {
+      fill: $primary-30;
     }
   }
 }

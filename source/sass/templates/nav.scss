@@ -33,18 +33,32 @@
   position: relative;
 
   &--cart {
-    &::before {
+    .nav__icon {
       position: absolute;
       left: 31px;
       top: 50%;
       transform: translateY(-50%);
       width: 21px;
       height: 20px;
-      opacity: 0.2;
-      background-image: url("../img/icon-cart.svg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      content: "";
+      fill: rgba(#231f20, 0.2);
+    }
+
+    &:hover {
+      opacity: 1;
+
+      .nav__icon {
+        fill: $primary;
+      }
+
+      span {
+        opacity: 0.6;
+      }
+    }
+
+    &:active {
+      .nav__icon {
+        fill: $primary;
+      }
     }
   }
 }
@@ -87,7 +101,7 @@
 
       .nav__toggle {
         background-image: url("../img/icon-menu-close.svg");
-        background-size: 20px 14px;
+        background-size: 21px 20px;
       }
     }
   }
@@ -104,7 +118,7 @@
 
     .nav__toggle {
       background-image: url("../img/icon-menu-close.svg");
-      background-size: 20px 14px;
+      background-size: 21px 20px;
     }
   }
 

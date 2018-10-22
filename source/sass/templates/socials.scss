@@ -6,25 +6,23 @@
 
 .socials__item {
   display: block;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 28px;
-  height: 28px;
-  background-position: center;
   margin: 0 15px;
 
-  &--insta {
-    background-image: url("../img/icon-insta.svg");
-    background-size: 22px 21px;
+  &:hover {
+    opacity: 1;
+
+    .socials__icon {
+      fill: $primary;
+    }
   }
 
-  &--fb {
-    background-image: url("../img/icon-fb.svg");
-    background-size: 15px 28px;
+  &:active {
+    .socials__icon {
+      fill: $primary;
+    }
   }
+}
 
-  &--tw {
-    background-image: url("../img/icon-twitter.svg");
-    background-size: 23px 20px;
-  }
+.socials__icon {
+  fill: #231f20;
 }
