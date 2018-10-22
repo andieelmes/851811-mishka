@@ -33,7 +33,7 @@
 
     &[href] {
       &:hover {
-        path {
+        svg {
           fill: #46c1ae;
         }
       }
@@ -41,7 +41,7 @@
       &:active {
         opacity: 0.3;
 
-        path {
+        svg {
           fill: #46c1ae;
         }
       }
