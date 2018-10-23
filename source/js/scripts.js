@@ -2,6 +2,10 @@ import picturefill from 'picturefill';
 
 import closest from 'element-closest';
 
+import svg4everybody from 'svg4everybody';
+
+svg4everybody()
+
 const openPopup = (openBtn, modal, inner, className) => {
   const btn = document.querySelectorAll(openBtn);
   const popup = document.querySelector(modal);
