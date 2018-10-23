@@ -1,0 +1,47 @@
+.feature {
+  padding: 27px 0 15px;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 6px;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: repeat-x;
+    background-size: auto 6px;
+    content: "";
+  }
+}
+
+@media (min-width: $tablet) {
+  .feature {
+    padding: 33px 0 35px;
+    min-height: 592px;
+
+    &::after {
+      height: 15px;
+      background-size: auto 15px;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .feature {
+    padding: 111px 0 64px;
+    position: relative;
+
+    &::after {
+      height: 23px;
+      background-size: auto 23px;
+      max-width: 1050px;
+      margin: 0 auto;
+    }
+  }
+
+  .container {
+    position: relative;
+  }
+}

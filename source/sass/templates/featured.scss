@@ -1,21 +1,3 @@
-.featured {
-  padding: 27px 0 15px;
-  position: relative;
-
-  &::after {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 6px;
-    background-image: url("../img/bg-zigzag-line.svg");
-    background-repeat: repeat-x;
-    background-size: auto 6px;
-    content: "";
-  }
-}
-
 .featured__title {
   font-size: 25px;
   font-weight: 700;
@@ -88,17 +70,7 @@
 }
 
 @media (min-width: $tablet) {
-  .featured {
-    padding: 33px 0 35px;
-    min-height: 592px;
-
-    &::after {
-      height: 15px;
-      background-size: auto 15px;
-    }
-  }
-
-  .featured__titles {
+  .featured__wrap {
     display: flex;
     justify-content: space-between;
   }
@@ -174,19 +146,7 @@
 
 @media (min-width: $desktop) {
   .featured {
-    padding: 111px 0 64px;
-    position: relative;
-
-    &::after {
-      height: 23px;
-      background-size: auto 23px;
-      max-width: 1050px;
-      margin: 0 auto;
-    }
-  }
-
-  .featured .container {
-    position: relative;
+    padding-left: 174px;
   }
 
   .featured__image {
@@ -199,11 +159,7 @@
     padding-right: 66.6%;
   }
 
-  .featured__block {
-    padding-left: 174px;
-  }
-
-  .featured__titles {
+  .featured__wrap {
     position: relative;
     z-index: 100;
   }
