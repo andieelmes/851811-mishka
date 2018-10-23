@@ -37,9 +37,10 @@ const openPopup = (openBtn, modal, inner, className) => {
     }
   };
 
-  btn.forEach(function(element) {
+  for (let i = 0; i < btn.length; i++) {
+    const element = btn[i];
     element.addEventListener('click', open)
-  });
+  }
 
   popup.addEventListener('click', closeByOutsideClick)
 
