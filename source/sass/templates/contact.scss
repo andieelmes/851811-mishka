@@ -61,6 +61,20 @@
   }
 }
 
+.contact__image {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  height: 457px;
+
+  img {
+    margin: 0 auto;
+  }
+}
+
 .contact__pin {
   position: absolute;
   top: 41%;
@@ -145,6 +159,10 @@
     iframe {
       width: 525px;
     }
+  }
+
+  .contact__image {
+    width: 525px;
   }
 
   .contact .container {
