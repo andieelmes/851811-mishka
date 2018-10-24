@@ -52,13 +52,13 @@
   margin-left: -29px;
   margin-right: -29px;
   width: calc(100% + 58px);
+}
 
-  iframe {
-    position: relative;
-    z-index: 202;
-    border: 0;
-    width: 100%;
-  }
+.contact__iframe {
+  position: relative;
+  z-index: 202;
+  border: 0;
+  width: 100%;
 }
 
 .contact__image {
@@ -155,10 +155,10 @@
     margin-left: auto;
     margin-right: auto;
     width: auto;
+  }
 
-    iframe {
-      width: 525px;
-    }
+  .contact__iframe {
+    width: 525px;
   }
 
   .contact__image {
