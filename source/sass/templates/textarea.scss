@@ -15,7 +15,8 @@
   }
 
   &:hover,
-  &:active {
+  &:active,
+  &:focus {
     border-color: #62d1ba;
     outline: none;
   }
