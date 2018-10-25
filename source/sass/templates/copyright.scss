@@ -45,6 +45,18 @@
   }
 
   .copyright__logo {
-    margin-top: 0;
+    margin-top: 5px;
+    margin-right: -3px;
+  }
+
+  .copyright__text {
+    padding-right: 30px;
+    margin-top: -7px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .copyright__logo {
+    margin-right: -6px;
   }
 }

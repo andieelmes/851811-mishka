@@ -1,3 +1,7 @@
+.nav {
+  box-shadow: 0 1px 0 0 $box-shadow-primary, inset 0 1px 0 0 $box-shadow-primary;
+}
+
 .nav__wrapper {
   list-style: none;
   margin: 0;
@@ -135,6 +139,11 @@
 }
 
 @media (min-width: $tablet) {
+  .nav {
+    border-bottom: 1px solid $border-primary;
+    box-shadow: none;
+  }
+
   .nav__wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -224,9 +233,14 @@
 }
 
 @media (min-width: $desktop) {
+  .nav {
+    border: none;
+  }
+
   .nav__wrapper {
     padding: 0 50px;
     max-width: 1150px;
+    border-bottom: 1px solid $border-primary;
   }
 
   .nav__item {
