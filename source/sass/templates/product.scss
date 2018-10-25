@@ -148,6 +148,11 @@
   .product__add {
     margin-right: -1px;
   }
+
+  .product__price {
+    font-size: 17px;
+    line-height: 1.41;
+  }
 }
 
 @media (min-width: $desktop) {
@@ -174,11 +179,6 @@
 
   .product__link {
     width: 100%;
-  }
-
-  .product__price {
-    font-size: 17px;
-    line-height: 1.41;
   }
 
   .product__desc {
