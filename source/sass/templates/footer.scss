@@ -22,7 +22,7 @@
     overflow: hidden;
   }
 
-  .footer .container {
+  .footer__container {
     display: flex;
     justify-content: space-between;
   }
@@ -50,6 +50,7 @@
 
   .footer__socials {
     padding: 3px 0 0 90px;
+    border-bottom: 0;
   }
 
   .footer__copyright {
