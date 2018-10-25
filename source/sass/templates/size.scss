@@ -30,6 +30,10 @@
   border-color: $primary;
 }
 
+.size__field:focus ~ .size__name {
+  border-color: $primary;
+}
+
 
 @media (min-width: $tablet) {
   .size {
