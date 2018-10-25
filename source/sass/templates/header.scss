@@ -20,6 +20,12 @@
 }
 
 @media (min-width: $tablet) {
+  .header {
+    background-color: transparent;
+    z-index: 20;
+    position: relative;
+  }
+
   .header__logo {
     padding: 22px 0 20px;
   }
@@ -31,11 +37,6 @@
     &--toggle {
       display: none;
     }
-  }
-
-  .header {
-    z-index: 20;
-    position: relative;
   }
 }
 

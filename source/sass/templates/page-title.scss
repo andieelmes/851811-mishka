@@ -22,9 +22,10 @@
     padding: 0 52px;
     max-width: 100%;
     position: relative;
+    margin-top: -60px;
 
     &--bg {
-      padding: 96px 52px 94px;
+      padding: 0;
 
       &::after {
         position: absolute;
@@ -41,6 +42,11 @@
       }
     }
   }
+
+  .page-title__container {
+    padding: 95px 52px 94px;
+    border-top: 1px solid $border-primary;
+  }
 }
 
 @media (min-width: $desktop) {
@@ -48,9 +54,9 @@
     font-size: 53px;
     line-height: 1.08;
     padding: 0 100px;
+  }
 
-    &--bg {
-      padding: 96px 52px 113px;
-    }
+  .page-title__container {
+    padding: 93px 52px 115px;
   }
 }
