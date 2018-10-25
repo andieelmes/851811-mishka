@@ -3,7 +3,7 @@
     position: relative;
 
     .input__icon {
-      right: 9px;
+      right: 27px;
       top: 41%;
     }
 
@@ -16,7 +16,7 @@
     position: relative;
 
     .input__icon {
-      right: 5px;
+      right: 22px;
       top: 47%;
     }
 
@@ -100,10 +100,15 @@
 }
 
 @media (min-width: $desktop) {
-  .input--tel,
-  .input--email {
-    &::after {
+  .input--tel {
+    .input__icon {
       right: 7px;
+    }
+  }
+
+  .input--email {
+    .input__icon {
+      right: 4px;
     }
   }
 }
