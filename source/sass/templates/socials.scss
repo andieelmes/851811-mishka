@@ -12,13 +12,15 @@
     opacity: 1;
 
     .socials__icon {
-      fill: $primary;
+      fill: #46c1ae;
     }
   }
 
   &:active {
+    opacity: 1;
+
     .socials__icon {
-      fill: $primary;
+      fill: rgba(#46c1ae, 0.3);
     }
   }
 }

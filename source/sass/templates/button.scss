@@ -20,12 +20,14 @@
     color: white;
 
     &:hover,
-    &:active {
+    &:active,
+    &:focus {
       border-color: #444444;
     }
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: #444444;
     color: $primary-contrast;
     opacity: 1;

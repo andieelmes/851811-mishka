@@ -1,5 +1,5 @@
 .reviews {
-  padding: 23px 0;
+  padding: 23px 0 21px;
   position: relative;
 
   &::after {
@@ -115,6 +115,17 @@
       background-image: url("../img/review@2x.jpg");
       background-size: 350px auto;
     }
+
+    &::before {
+      position: absolute;
+      width: 350px;
+      height: 457px;
+      content: "";
+      background-color: #F5F5F5;
+      left: 0;
+      top: 0;
+      z-index: -1;
+    }
   }
 
   .reviews__button {
@@ -169,6 +180,10 @@
   .reviews__container {
     padding: 70px 50px 137px 225px;
     background-position-x: 50px;
+
+    &::before {
+      left: 50px;
+    }
   }
 
   .reviews__title {
