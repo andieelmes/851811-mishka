@@ -3,7 +3,7 @@
     position: relative;
 
     .input__icon {
-      right: 27px;
+      right: 9px;
       top: 41%;
     }
 
@@ -16,7 +16,7 @@
     position: relative;
 
     .input__icon {
-      right: 22px;
+      right: 5px;
       top: 47%;
     }
 
@@ -93,10 +93,14 @@
     .input__field {
       background-color: #f1f1f1;
     }
+  }
 
-    &::after {
-      right: 25px;
-    }
+  .input--tel .input__icon {
+    right: 27px;
+  }
+
+  .input--email .input__icon {
+    right: 22px;
   }
 }
 
