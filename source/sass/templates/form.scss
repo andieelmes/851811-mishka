@@ -19,6 +19,12 @@
   &:last-of-type {
     margin-bottom: 7px;
   }
+
+  &--tel {
+    .form__caption::after {
+      margin: 7px 0 0 31px;
+    }
+  }
 }
 
 .form__caption {
@@ -151,7 +157,7 @@
     }
   }
 
-  .form__block .container {
+  .form__container {
     display: flex;
     align-items: flex-start;
   }
@@ -259,16 +265,17 @@
     padding-top: 88px;
   }
 
+  .form__container,
   .form__text {
     padding: 0 112px;
   }
 
-  .form .container {
+  .form__wrapper {
     padding: 0 112px;
+  }
 
-    &.form__buttons {
-      padding: 0 225px;
-    }
+  .form__buttons {
+    padding: 0 225px;
   }
 
   .form__caption {
@@ -295,7 +302,7 @@
     &--tel,
     &--email,
     &--textarea {
-      .container {
+      .form__container {
         padding-right: 225px;
       }
     }

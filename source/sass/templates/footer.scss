@@ -55,6 +55,12 @@
 
   .footer__copyright {
     padding: 0;
+    margin-right: -10px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .footer__copyright {
     margin-right: -6px;
   }
 }

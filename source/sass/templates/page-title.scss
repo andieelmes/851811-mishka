@@ -10,9 +10,13 @@
 
   &--bg {
     background-color: #f1f1f1;
-    padding: 71px 30px 76px;
+    padding: 71px 0 76px;
     max-width: 100%;
   }
+}
+
+.page-title__container {
+  min-width: 0;
 }
 
 @media (min-width: $tablet) {
@@ -44,7 +48,7 @@
   }
 
   .page-title__container {
-    padding: 95px 52px 94px;
+    padding: 95px 0 94px;
     border-top: 1px solid $border-primary;
   }
 }
@@ -57,6 +61,6 @@
   }
 
   .page-title__container {
-    padding: 93px 52px 115px;
+    padding: 93px 0 115px;
   }
 }

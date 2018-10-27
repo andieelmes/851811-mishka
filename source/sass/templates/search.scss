@@ -48,7 +48,7 @@
 
 @media (min-width: $tablet) {
   .search__label {
-    padding: 24px 30px 25px 49px;
+    padding: 24px 30px 25px 52px;
     height: 100%;
   }
 
@@ -63,5 +63,11 @@
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+  }
+}
+
+@media (min-width: $desktop) {
+  .search__label {
+    padding: 24px 30px 25px 51px;
   }
 }
