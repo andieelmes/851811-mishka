@@ -12,26 +12,30 @@
   font-size: 17px;
   font-weight: 700;
   line-height: 0.94;
-  color: $border_secondary_color;
+  color: $text-secondary;
   width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 9px 10px;
-  border: solid 2px rgba($border_secondary_color, 0.1);
+  border: solid 2px rgba($border-secondary, 0.1);
 
   &:hover {
-    border-color: rgba($border_secondary_color, 0.3);
+    border-color: rgba($border-secondary, 0.3);
   }
 }
 
-.size__input:checked ~ .size__name {
-  border-color: $primary_color;
+.size__field:checked ~ .size__name {
+  border-color: $primary;
+}
+
+.size__field:focus ~ .size__name {
+  border-color: $primary;
 }
 
 
-@media (min-width: 772px) {
+@media (min-width: $tablet) {
   .size {
     max-width: 32%;
   }

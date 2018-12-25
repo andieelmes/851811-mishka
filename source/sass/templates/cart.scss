@@ -12,7 +12,7 @@
   font-weight: 700;
   line-height: 1.2;
   text-align: center;
-  color: $black;
+  color: $text-primary;
   margin: 0;
   padding: 9px 0 5px;
   text-transform: uppercase;
@@ -22,7 +22,7 @@
   font-size: 15px;
   line-height: 1.5;
   text-align: center;
-  color: $border_secondary_color;
+  color: $text-secondary;
   margin: 10px 0;
 }
 
@@ -38,13 +38,13 @@
 }
 
 
-@media (min-width: 772px) {
+@media (min-width: $tablet) {
   .cart {
     max-width: 566px;
     padding: 24px 0 46px;
   }
 
-  .cart .container {
+  .cart__container {
     padding: 0 105px;
   }
 

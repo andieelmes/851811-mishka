@@ -2,53 +2,41 @@
   &--tel {
     position: relative;
 
-    &::after {
-      position: absolute;
+    .input__icon {
       right: 9px;
       top: 41%;
-      transform: translateY(-50%);
-      background-repeat: no-repeat;
-      background-size: cover;
-      content: "";
-      background-image: url("../img/icon-phone.svg");
-      width: 25px;
-      height: 24px;
-      opacity: 0.2;
     }
 
     .input__field {
-      padding-right: 50px;
+      padding-right: 70px;
     }
   }
 
   &--email {
     position: relative;
 
-    &::after {
-      position: absolute;
+    .input__icon {
       right: 5px;
       top: 47%;
-      transform: translateY(-50%);
-      background-repeat: no-repeat;
-      background-size: cover;
-      content: "";
-      background-image: url("../img/icon-mail.svg");
-      width: 32px;
-      height: 32px;
-      opacity: 0.2;
     }
 
     .input__field {
-      padding-right: 50px;
+      padding-right: 70px;
     }
   }
+}
+
+.input__icon {
+  position: absolute;
+  fill: rgba(#000000, 0.2);
+  transform: translateY(-50%);
 }
 
 .input__name {
   font-size: 17px;
   font-weight: 700;
   line-height: 1.06;
-  color: $black;
+  color: $text-primary;
   display: block;
 }
 
@@ -57,10 +45,10 @@
   width: 100%;
   border: 0;
   outline: none;
-  box-shadow: inset 0 -2px 0 0 $black;
+  box-shadow: inset 0 -2px 0 0 #000000;
   font-size: 17px;
-  line-height: 1.2;
-  color: black;
+  line-height: 1.06;
+  color: $text-secondary;
   height: 52px;
   padding: 5px 0 9px;
 
@@ -70,12 +58,21 @@
   }
 
   &:hover,
-  &:active {
+  &:active,
+  &:focus {
     box-shadow: inset 0 -2px 0 0 #62d1ba;
+
+    ~ .input__icon {
+      fill: $primary;
+    }
+  }
+
+  &:required.error {
+    box-shadow: inset 0 -2px 0 0 red;
   }
 }
 
-@media (min-width: 772px) {
+@media (min-width: $tablet) {
   .input {
     display: flex;
   }
@@ -88,6 +85,7 @@
 
   .input__field {
     padding: 5px 17px 9px;
+    font-size: 19px;
   }
 
   .input--tel,
@@ -95,18 +93,27 @@
     .input__field {
       background-color: #f1f1f1;
     }
+  }
 
-    &::after {
-      right: 25px;
-    }
+  .input--tel .input__icon {
+    right: 27px;
+  }
+
+  .input--email .input__icon {
+    right: 22px;
   }
 }
 
-@media (min-width: 1250px) {
-  .input--tel,
-  .input--email {
-    &::after {
+@media (min-width: $desktop) {
+  .input--tel {
+    .input__icon {
       right: 7px;
+    }
+  }
+
+  .input--email {
+    .input__icon {
+      right: 4px;
     }
   }
 }

@@ -1,14 +1,16 @@
 @import "normalize";
 @import "base/fonts.scss";
+@import "base/media.scss";
+@import "base/colors.scss";
 @import "base/base.scss";
 @import "base/container.scss";
-@import "base/vars.scss";
 @import "templates/page-title.scss";
 @import "templates/header.scss";
 @import "templates/logo.scss";
 @import "templates/nav.scss";
 @import "templates/cover.scss";
 @import "templates/link.scss";
+@import "templates/feature.scss";
 @import "templates/featured.scss";
 @import "templates/button.scss";
 @import "templates/about.scss";

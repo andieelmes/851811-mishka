@@ -1,12 +1,12 @@
 .about {
-  padding: 27px 0 2px;
+  padding: 27px 0 0;
 }
 
 .about__title {
   font-size: 25px;
   font-weight: 700;
   line-height: 1.2;
-  color: $black;
+  color: $text-primary;
   margin: 0;
 }
 
@@ -18,26 +18,77 @@
 
 .about__item {
   padding-bottom: 12px;
-}
+  padding-top: 51px;
+  position: relative;
 
-.about__icon {
-  min-width: 40px;
-  min-height: 50px;
-  display: inline-flex;
-  width: auto;
-  justify-content: center;
-  align-items: center;
+  &:last-child {
+    padding-bottom: 13px;
+  }
+
+  &::before {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    content: "";
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &--flower::before {
+    width: 32px;
+    height: 37px;
+    background-image: url("../img/icon-feature-flower.svg");
+  }
+
+  &--money::before {
+    width: 47px;
+    height: 27px;
+    background-image: url("../img/icon-feature-money.svg");
+    left: 0;
+    top: 9px;
+  }
+
+  &--heart::before {
+    width: 34px;
+    height: 27px;
+    background-image: url("../img/icon-feature-heart.svg");
+    top: 13px;
+  }
+
+  &--ball::before {
+    width: 35px;
+    height: 34px;
+    background-image: url("../img/icon-feature-ball.svg");
+    top: 11px;
+    left: 4px;
+  }
+
+  &--rocket::before {
+    width: 55px;
+    height: 23px;
+    background-image: url("../img/icon-feature-rocket.svg");
+    top: 12px;
+    left: -5px;
+  }
+
+  &--gift::before {
+    width: 33px;
+    height: 32px;
+    background-image: url("../img/icon-feature-gift.svg");
+    left: 4px;
+    top: 10px;
+  }
 }
 
 .about__text {
   font-size: 17px;
   font-weight: 700;
   line-height: 1.18;
-  color: $black;
+  color: $text-primary;
   margin: 10px 0;
 }
 
-@media (min-width: 772px) {
+@media (min-width: $tablet) {
   .about {
     padding: 50px 0 23px;
   }
@@ -86,10 +137,13 @@
   }
 }
 
-@media (min-width: 1250px) {
+@media (min-width: $desktop) {
   .about {
     padding: 58px 0 20px;
-    margin: 0 100px;
+  }
+
+  .about__container {
+    padding: 0 150px;
   }
 
   .about__title {

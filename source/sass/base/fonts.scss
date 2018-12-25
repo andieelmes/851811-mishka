@@ -1,5 +1,6 @@
 @font-face {
   font-family: "Open Sans";
+  font-display: "swap";
   src: url("../fonts/opensans.woff2") format("woff2"),
     url("../fonts/opensans.woff") format("woff");
   font-weight: 400;
@@ -8,8 +9,11 @@
 
 @font-face {
   font-family: "Open Sans";
+  font-display: "swap";
   src: url("../fonts/opensansbold.woff2") format("woff2"),
     url("../fonts/opensansbold.woff") format("woff");
   font-weight: 700;
   unicode-range: u+0020-2212;
 }
+
+$font-primary:"Open Sans", "Arial", sans-serif;

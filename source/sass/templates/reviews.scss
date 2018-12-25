@@ -1,5 +1,5 @@
 .reviews {
-  padding: 23px 0;
+  padding: 23px 0 21px;
   position: relative;
 
   &::after {
@@ -20,7 +20,7 @@
   font-size: 25px;
   font-weight: 700;
   line-height: 1.2;
-  color: $black;
+  color: $text-primary;
   margin: 0;
 }
 
@@ -34,17 +34,17 @@
   margin: 10px 0;
   font-size: 15px;
   line-height: 2;
-  color: $border_secondary_color;
+  color: $text-secondary;
 }
 
 .reviews__author {
   width: 100%;
   font-size: 17px;
   line-height: 1.41;
-  color: $black;
+  color: $text-primary;
   font-weight: 700;
   font-style: normal;
-  padding: 17px 0;
+  padding: 4px 0 30px;
   display: block;
 }
 
@@ -60,8 +60,8 @@
 }
 
 .reviews__control {
-  background-color: $white;
-  border: solid 1px $border_primary_color;
+  background-color: $primary-contrast;
+  border: solid 1px $border-primary;
   height: 52px;
   width: 50%;
   background-repeat: no-repeat;
@@ -90,7 +90,7 @@
   margin: 38px 0 29px;
 }
 
-@media (min-width: 772px) {
+@media (min-width: $tablet) {
   .reviews {
     padding: 0;
 
@@ -100,7 +100,7 @@
     }
   }
 
-  .reviews .container {
+  .reviews__container {
     position: relative;
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
@@ -110,6 +110,22 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/review@2x.jpg");
+      background-size: 350px auto;
+    }
+
+    &::before {
+      position: absolute;
+      width: 350px;
+      height: 457px;
+      content: "";
+      background-color: #f5f5f5;
+      left: 0;
+      top: 0;
+      z-index: -1;
+    }
   }
 
   .reviews__button {
@@ -151,18 +167,23 @@
   }
 }
 
-@media (min-width: 1250px) {
+@media (min-width: $desktop) {
   .reviews {
-    margin: 0 100px;
-
     &::after {
       height: 23px;
       background-size: auto 23px;
+      max-width: 1050px;
+      margin: 0 auto;
     }
   }
 
-  .reviews .container {
-    padding: 70px 0 137px 175px;
+  .reviews__container {
+    padding: 70px 50px 137px 225px;
+    background-position-x: 50px;
+
+    &::before {
+      left: 50px;
+    }
   }
 
   .reviews__title {
@@ -182,8 +203,12 @@
     padding: 27px 0;
   }
 
+  .reviews__item {
+    padding: 40px 100px 2px 0;
+  }
+
   .reviews__button {
-    right: 0;
+    right: 50px;
     top: 79px;
   }
 }

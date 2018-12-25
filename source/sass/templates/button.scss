@@ -2,12 +2,12 @@
   display: block;
   text-decoration: none;
   outline: none;
-  border: solid 2px $border_secondary_color;
+  border: solid 2px $border-secondary;
   font-size: 17px;
   font-weight: 700;
   line-height: 1.18;
   text-align: center;
-  color: $border_secondary_color;
+  color: $text-secondary;
   padding: 14px 20px;
   min-height: 52px;
   background-color: white;
@@ -15,20 +15,27 @@
   cursor: pointer;
 
   &--green {
-    border-color: $primary_color;
-    background-color: $primary_color;
+    border-color: $primary;
+    background-color: $primary;
     color: white;
+
+    &:hover,
+    &:active,
+    &:focus {
+      border-color: #444444;
+    }
   }
 
-  &:hover {
-    background-color: $border_secondary_color;
-    color: $white;
+  &:hover,
+  &:focus {
+    background-color: #444444;
+    color: $primary-contrast;
     opacity: 1;
   }
 
   &:active {
-    background-color: $border_secondary_color;
-    color: $white_30;
+    background-color: #444444;
+    color: $primary-contrast-30;
     opacity: 1;
   }
 }

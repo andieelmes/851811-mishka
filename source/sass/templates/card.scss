@@ -1,6 +1,6 @@
 .card {
-  background-color: $white;
-  border: solid 1px $border_primary_color;
+  background-color: $primary-contrast;
+  border: solid 1px $border-primary;
   margin-bottom: 58px;
   max-width: 260px;
   margin-left: auto;
@@ -18,6 +18,7 @@
     box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
 
     .card__play {
+      opacity: 0.3;
       transform: translate(-50%, -50%) scale(0.8);
     }
   }
@@ -27,7 +28,7 @@
   font-size: 17px;
   font-weight: 700;
   line-height: 1.41;
-  color: $black;
+  color: $text-primary;
   position: relative;
   margin: 0;
   padding: 23px 20px 26px 90px;
@@ -69,7 +70,7 @@
   padding: 0 34px;
   font-size: 13px;
   line-height: 1.85;
-  color: $border_secondary_color;
+  color: $text-secondary;
 }
 
 .card__button {
@@ -77,7 +78,7 @@
   margin-bottom: 32px;
 }
 
-@media (min-width: 772px) {
+@media (min-width: $tablet) {
   .card {
     display: flex;
     flex-direction: column;
@@ -113,12 +114,13 @@
   }
 }
 
-@media (min-width: 1250px) {
+@media (min-width: $desktop) {
   .card {
     position: relative;
     padding-bottom: 48px;
     margin-bottom: 104px;
     max-width: 100%;
+    padding-left: 65%;
   }
 
   .card__video {
@@ -129,8 +131,8 @@
   }
 
   .card__title {
-    margin-left: calc(65% + 40px);
-    padding: 97px 50px 26px 38px;
+    margin-left: 40px;
+    padding: 96px 50px 26px 38px;
 
     &::before {
       top: 25%;
@@ -141,11 +143,11 @@
   .card__info {
     margin: 6px 0 35px;
     padding: 0 38px;
-    margin-left: calc(65% + 40px);
+    margin-left: 40px;
   }
 
   .card__button {
-    margin-left: calc(65% + 78px);
+    margin-left: 78px;
     margin-right: 57px;
     margin-top: 11px;
     margin-bottom: 11px;

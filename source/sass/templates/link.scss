@@ -10,30 +10,39 @@
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
-  transition: all 0.2s;
+  box-shadow: 0 -5px 0 0 transparent;
+  position: relative;
 
-  &:hover {
-    background-color: #46c1ae;
-    opacity: 1;
-    //padding-bottom: 34px;
-  }
-
+  &:hover,
   &:active {
-    background-color: #46c1ae;
-    color: $white_30;
     opacity: 1;
   }
 
   &--light {
-    background-color: $primary_color;
+    background-color: $primary;
+  }
 
-    &:hover {
-      background-color: #59d5bc;
-    }
+  &::after {
+    position: absolute;
+    right: 27px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+    background-position: center;
+  }
 
-    &:active {
-      background-color: #59d5bc;
-    }
+  &--interior::after {
+    background-image: url("../img/icon-interior.svg");
+    width: 60px;
+    height: 62px;
+  }
+
+  &--toy::after {
+    background-image: url("../img/icon-toy.svg");
+    width: 60px;
+    height: 60px;
   }
 }
 
@@ -42,11 +51,59 @@
   max-width: 66%;
 }
 
-@media (min-width: 772px) {
+
+@media (min-width: $tablet) {
   .link {
     font-size: 20px;
     line-height: 1.5;
     padding: 0 35px;
+
+    &:hover {
+      background-color: #46c1ae;
+      opacity: 1;
+      padding-bottom: 5px;
+      box-shadow: 0 -5px 0 0 #46c1ae;
+
+      .link__text {
+        padding-top: 23px;
+      }
+
+      &::after {
+        top: calc(50% - 5px);
+      }
+    }
+
+    &:active {
+      background-color: #46c1ae;
+      color: $primary-contrast-30;
+      opacity: 1;
+      padding-bottom: 5px;
+      box-shadow: 0 -5px 0 0 #46c1ae;
+
+      .link__text {
+        padding-top: 23px;
+      }
+
+      img {
+        opacity: 0.3;
+      }
+    }
+
+    &--light {
+      &:hover {
+        background-color: #59d5bc;
+        box-shadow: 0 -5px 0 0 #59d5bc;
+      }
+
+      &:active {
+        background-color: #59d5bc;
+        box-shadow: 0 -5px 0 0 #59d5bc;
+      }
+    }
+
+    &--toy::after {
+      right: 33px;
+    }
   }
 
   .link__text {
@@ -54,8 +111,12 @@
   }
 }
 
-@media (min-width: 1250px) {
+@media (min-width: $desktop) {
   .link__text {
     max-width: 39%;
+  }
+
+  .link::after {
+    top: 52%;
   }
 }

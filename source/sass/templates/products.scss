@@ -1,5 +1,6 @@
 .products {
   padding: 30px 0 32px;
+  overflow: hidden;
 }
 
 .products__container {
@@ -9,7 +10,7 @@
 }
 
 
-@media (min-width: 772px) {
+@media (min-width: $tablet) {
   .products {
     padding: 67px 0 52px;
   }
@@ -21,7 +22,7 @@
   }
 }
 
-@media (min-width: 1250px) {
+@media (min-width: $desktop) {
   .products {
     padding: 117px 0 2px;
   }
